@@ -1,0 +1,3 @@
+- clean code merupakan istilah untuk kode yang mudah dibaca, dipahami, dan diubah oleh programmer
+- karakteristik kumpulan kode dikatakan clean code diantaranya adalah naming mudah dipahami, naming mudah dieja dan dicari, naming singkat tapi representatif, konsisten dalam melakukan naming, menghindari penambahan naming yang tidak perlu (prefix, postfix), terdapat comment yang memang diperlukan saja, penulisan fungsi yang singkat dan tidak memiliki banyak parameter, mengikuti standar/konvensi yang sudah ada, menggunakan formatter
+- prinsip-prinsip dalam clean code diantaranya yaitu kiss (keep it so simple, penulisan kode yang sederhana)  dan dry (don't repeat yourself, menghindari pengulangan penulisan kode)
