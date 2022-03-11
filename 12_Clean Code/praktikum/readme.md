@@ -44,9 +44,11 @@ func (m *mobil) tambahKecepatan(kecepatanBaru) {
 
 func main() {
   mobilcepat := mobil{}
-  mobilcepat.berjalan()
-  mobilcepat.berjalan()
-  mobilcepat.berjalan()
+
+  iterasi := 3
+  for (i := 0; i < iterasi; i++) {
+    mobilcepat.berjalan()
+  }
 
   mobillamban := mobil{}
   mobillamban.berjalan()
