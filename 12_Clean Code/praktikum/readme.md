@@ -1,46 +1,55 @@
 **Problem 1**
 
-Banyak kekurangan: 5
+Banyak kekurangan: 7
 
 Bagian mana saja:
-- Naming class user
-- Naming class userservice
-- Naming fungsi getallusers
-- Naming fungsi getuserbyid
-- Naming parameter userid di fungsi getuserbyid
+
+- Naming struct userservice
+- Naming method getallusers
+- Naming method getuserbyid
+- Naming properti t di userservice
+- Tipe receiver di method getallusers dan getuserbyid
+- Naming receiver u di method getallusers dan getuserbyid
+- Naming variabel r penerima return forrange di getuserbyid
 
 Alasan:
-- Naming class seharusnya menggunakan UpperCamelCase, sehingga seharusnya "class user" diubah menjadi "class User", dan "class userservice" diubah menjadi "class UserService"
-- Naming function/method seharusnya menggunakan lowerCamelCase, sehingga seharusnya fungsi "getallusers" dibuah menjadi "getAllUsers", dan fungsi "getuserbyid" diubah menjadi "getUserByID"
-- Naming parameter "userid" di fungsi "getuserbyid" seharusnya diubah menjadi "id", karena dari nama fungsinya sudah merepresentasikan untuk mendapatkan data user by id (id user)
+
+- Naming struct dan method seharusnya menggunakan camelCase (untuk penentuan kapital huruf pertama menyesuaikan kebutuhan exported atau tidak), sehingga seharusnya struct "userservice" diubah menjadi "userService", method "getallusers" diubah menjadi "getAllUsers", dan method "getuserbyid" diubah menjadi "getUserByID"
+- Naming properti t di userservice kurang representatif, seharusnya diubah menjadi users
+- Tipe receiver di method getallusers dan getuserbyid seharusnya menggunakan pointer, agar lebih hemat memori dengan tidak terus menerus membuat copy dari data struct terkait
+- Naming receiver u di method getallusers dan getuserbyid kurang representatif, seharusnya diubah menjadi misalnya service
+- Naming variabel r penerima return forrange di getuserbyid kurang representatif, seharusnya diubah menjadi user
 
 **Problem 2**
 
-``` java
-class Kendaraan {
-  var totalRoda  = 0;
-  var kecepatanPerJam = 0;
+```go
+package main
+
+type kendaraan struct {
+  totalRoda int
+  kecepatanPerJam int
 }
 
-class Mobil extends Kendaraan {
-  void berjalan() {
-    tambahKecepatan(10);
-  }
-
-  tambahKecepatan(var kecepatanBaru) {
-    kecepatanPerJam = kecepatanPerJam + kecepatanBaru;
-  }
+type mobil struct {
+  kendaraan
 }
 
-void main() {
-  mobilCepat = new Mobil();
-
-  mobilCepat.berjalan();
-  mobilCepat.berjalan();
-  mobilCepat.berjalan();
-
-  mobilLamban = new Mobil();
-
-  mobilLamban.berjalan();
+func (m *mobil) berjalan() {
+  m.tambahKecepatan(10)
 }
+
+func (m *mobil) tambahKecepatan(kecepatanBaru) {
+  m.kecepatanPerJam = m.kecepatanPerJam + kecepatanBaru
+}
+
+func main() {
+  mobilcepat := mobil{}
+  mobilcepat.berjalan()
+  mobilcepat.berjalan()
+  mobilcepat.berjalan()
+
+  mobillamban := mobil{}
+  mobillamban.berjalan()
+}
+
 ```
