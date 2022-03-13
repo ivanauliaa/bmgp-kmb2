@@ -1,0 +1,4 @@
+- kita bisa mengombinasikan data dari sejumlah tabel menggunakan statement join
+- union operator digunakan untuk mengombinasikan hasil dari sejumlah statement select
+- agregasi digunakan untuk mengambil nilai beberapa baris dikelompokkan bersama untuk membentuk nilai ringkasan tunggal (min, max, sum, avg, count, having)
+- subquery digunakan untuk mengembalikan data yang akan digunakan dalam query utama sebagai syarat untuk lebih membatasi data yang akan diambil
