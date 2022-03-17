@@ -1,0 +1,10 @@
+- diagram design: flowchart, use case diagram, entity relationship diagram (ERD), high level architecture (HLA)
+- distributed systems: scalability, reliability, availability, efficiency, serviceability
+- scaling: horizontal (quality), vertical (quantity)
+- job queue: manajemen worker" dalam menangani job aplikasi
+- load balancing: menyebarkan lalu lintas di jaringan untuk menuju ke server dari server-server yang ada sehingga dapat meningkatkan responsivitas dan ketersediaan
+- architecture model: monolithic (satu host untuk banyak service), microservice (satu host untuk satu service sehingga ada isolasi antar service)
+- databases: sql (data utama), nosql (data log)
+- caching: frontend (web caching), backend (data caching)
+- database indexing: optimasi performa database
+- database replication: mereplika database master untuk meningkatkan ketersediaan layanan database
