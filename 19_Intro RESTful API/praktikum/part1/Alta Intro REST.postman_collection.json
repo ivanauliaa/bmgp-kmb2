@@ -1,0 +1,1518 @@
+{
+	"info": {
+		"_postman_id": "3849529e-42db-4ebe-967c-ec02486f5541",
+		"name": "Alta Intro REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "newsapi",
+			"item": [
+				{
+					"name": "All Tesla Articles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{newsAPIBaseURL}}/everything?q=tesla&from=2022-02-18&sortBy=publishedAt&apiKey={{newsAPIKey}}",
+							"host": [
+								"{{newsAPIBaseURL}}"
+							],
+							"path": [
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "tesla"
+								},
+								{
+									"key": "from",
+									"value": "2022-02-18"
+								},
+								{
+									"key": "sortBy",
+									"value": "publishedAt"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{newsAPIKey}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://newsapi.org/v2/everything?q=tesla&from=2022-02-18&sortBy=publishedAt&apiKey=775577185d014f8ea8319631775832ae",
+									"protocol": "https",
+									"host": [
+										"newsapi",
+										"org"
+									],
+									"path": [
+										"v2",
+										"everything"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "tesla"
+										},
+										{
+											"key": "from",
+											"value": "2022-02-18"
+										},
+										{
+											"key": "sortBy",
+											"value": "publishedAt"
+										},
+										{
+											"key": "apiKey",
+											"value": "775577185d014f8ea8319631775832ae"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 18 Mar 2022 04:13:54 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Cached-Result",
+									"value": "false"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=EV3ljLpiVbklr8HUBmMOfb%2BOM2ebomwJNSt4l%2FHnotdanWePXvrx24WKH00MG469zMdVab6u%2FcimZ6bRsM3u5vIZGFFgS2C1ITwvwukRqVlkcxYesVPZeEi8yA4q\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "6edb236d4f8f87e1-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"ok\",\n    \"totalResults\": 9462,\n    \"articles\": [\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Motley Fool Australia\"\n            },\n            \"author\": \"James Mickleboro\",\n            \"title\": \"Brokers name 3 ASX shares to buy today\",\n            \"description\": \"Brokers are bullish on these ASX shares...\\nThe post Brokers name 3 ASX shares to buy today appeared first on The Motley Fool Australia.\",\n            \"url\": \"https://www.fool.com.au/2022/03/18/brokers-name-3-asx-shares-to-buy-today-108/\",\n            \"urlToImage\": \"https://www.fool.com.au/wp-content/uploads/2021/07/time-to-buy.jpg\",\n            \"publishedAt\": \"2022-03-18T04:06:46Z\",\n            \"content\": \"It has been another busy week for Australias top brokers. This has led to the release of a large number of broker notes.\\r\\nThree broker buy ratings that you might want to know more about are summarise… [+1501 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"DIE WELT\"\n            },\n            \"author\": \"Anja Ettel, Holger Zschäpitz, Anja Ettel, Holger Zschäpitz\",\n            \"title\": \"Eine deutsche Biotech-Legende und der beste Weg zum Gold\",\n            \"description\": \"In der heutigen Folge „Alles auf Aktien“ sprechen die Finanzjournalisten Anja Ettel und Nando Sommerfeldt über eine negative Überraschung bei Gamestop, ein vollkommen misslungenes Börsendebüt und frohe Kunde für Tesla.\",\n            \"url\": \"https://www.welt.de/podcasts/alles-auf-aktien/article237612171/Morphosys-statt-Biontech-So-gut-schlaegt-sich-die-deutsche-Biotech-Legende.html\",\n            \"urlToImage\": \"https://img.welt.de/img/podcasts/alles-auf-aktien/mobile236727889/4421353967-ci16x9-w1200/DWO-Podcast-Teaser-AllesaufAktien-Nando-Ettl.jpg\",\n            \"publishedAt\": \"2022-03-18T04:04:19Z\",\n            \"content\": \"Abonnieren Sie den Podcast bei Spotify, Apple Podcast, Amazon Music und Deezer. Oder direkt per RSS-Feed.\\r\\nAußerdem geht es um Bored Apes Yacht Club, Ape Coin, Nutrien, CF Industries, Mosaic, Potash,… [+382 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"3dnews.ru\"\n            },\n            \"author\": null,\n            \"title\": \"Lucid призналась, что тоже вынуждена будет поднять цены на электромобили, но не повторит ошибки Rivian\",\n            \"description\": \"К концу прошлого года компания Lucid Motors приступила к поставкам дебютной серии электромобилей Air в комплектации Dream Edition за $169 000, которая обеспечивает запас хода 836 км и мощность силовой установки 1111 лошадиных сил. Руководитель компании осозна…\",\n            \"url\": \"https://3dnews.ru/1062225/lucid-priznalas-chto-toge-vinugdena-budet-podnyat-tseni-na-elektromobili-no-ne-povtorit-oshibki-rivian\",\n            \"urlToImage\": \"https://3dnews.ru/assets/external/illustrations/2022/03/18/1062225/lucid_01.jpg\",\n            \"publishedAt\": \"2022-03-18T03:52:00Z\",\n            \"content\": \"Lucid Motors Air Dream Edition $169 000, 836 1111 . , , Rivian - .\\r\\n: Lucid Motors\\r\\n, Rivian 1720 %, , . , Rivian , . , Rivian , .\\r\\n Lucid Motors (Peter Rawlinson), Reuters, , . , Tesla — . Lucid, « … [+127 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"CleanTechnica\"\n            },\n            \"author\": \"Johnna Crider\",\n            \"title\": \"Elon Musk Sheds Light On Tesla’s “Only Path” To Full Self Driving\",\n            \"description\": \"Elon Musk has shed some light on what he sees as the “only path to success” for broad full self-driving capability. His thoughts on Twitter came as a response to Whole Mars Blog, who has been speaking out against some of the smear campaigns put forth by some …\",\n            \"url\": \"https://cleantechnica.com/2022/03/17/elon-musk-sheds-light-on-teslas-only-path-to-full-self-driving/\",\n            \"urlToImage\": \"https://cleantechnica.com/files/2019/03/tesla-model-y-unveiling-elon-musk-3.png\",\n            \"publishedAt\": \"2022-03-18T03:32:06Z\",\n            \"content\": \"Elon Musk has shed some light on what he sees as the “only path to success” for broad full self-driving capability. His thoughts on Twitter came as a response to Whole Mars Blog, who has been speakin… [+3947 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Seeking Alpha\"\n            },\n            \"author\": \"John Vincent\",\n            \"title\": \"Tracking Ole Andreas Halvorsen's Viking Global Portfolio - Q4 2021 Update\",\n            \"description\": \"Halvorsen's 13F portfolio value dropped from $36.04B to $34.49B. The top 3 positions are Ginkgo Bioworks, General Electric and T-Mobile US, at ~17% of the portfolio.\",\n            \"url\": \"https://seekingalpha.com/article/4496357-ole-andreas-halvorsens-viking-global-portfolio-q4-2021-update\",\n            \"urlToImage\": \"https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1143978590/image_1143978590.jpg?io=getty-c-w750\",\n            \"publishedAt\": \"2022-03-18T03:26:40Z\",\n            \"content\": \"Antagain/iStock via Getty Images\\r\\nThis article is part of a series that provides an ongoing analysis of the changes made to Ole Andreas Halvorsen's 13F stock portfolio on a quarterly basis. It is bas… [+12095 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"handelsblatt\",\n                \"name\": \"Handelsblatt\"\n            },\n            \"author\": \"Silke Kersting, Dietmar Neuerer\",\n            \"title\": \"Interview: Dietmar Woidke: „Der soziale Zusammenhalt steht auf dem Spiel“\",\n            \"description\": \"Brandenburgs Ministerpräsident warnt vor den Folgen steigender Energiepreise infolge des Ukrainekriegs – und sieht nicht nur die Versorgungssicherheit gefährdet.\",\n            \"url\": \"https://www.handelsblatt.com/politik/deutschland/interview-dietmar-woidke-der-soziale-zusammenhalt-steht-auf-dem-spiel/28169450.html\",\n            \"urlToImage\": \"https://www.handelsblatt.com/images/dietmar-woidke/28169500/5-format2003.jpg\",\n            \"publishedAt\": \"2022-03-18T03:12:52Z\",\n            \"content\": \"Berlin Brandenburgs Ministerpräsident Dietmar Woidke (SPD) hat davor gewarnt, den Import von Öl und Gas aus Russland wegen des Angriffskriegs in der Ukraine zu stoppen. Ich hoffe, dass Russland zu se… [+10604 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Viva.co.id\"\n            },\n            \"author\": \"Lazuardhi Utama\",\n            \"title\": \"Elon Musk: 7 Tahun Lagi Manusia Injak Kaki di Mars\",\n            \"description\": \"Elon Musk meramalkan bahwa manusia akan mencapai Mars pada 2029, setelah Astronot Neil Armstrong pertama kali menginjakkan kaki di Bulan pada 1969.\",\n            \"url\": \"https://www.viva.co.id/digital/digilife/1458647-elon-musk-7-tahun-lagi-manusia-injak-kaki-di-mars\",\n            \"urlToImage\": \"https://thumb.viva.co.id/media/frontend/thumbs3/2021/04/07/606d7c9348c53-grimes-dan-elon-musk_665_374.jpg\",\n            \"publishedAt\": \"2022-03-18T03:08:02Z\",\n            \"content\": \"VIVA  Elon Musk meramalkan bahwa manusia akan mencapai Mars pada 2029. Jawaban kepala eksekutif Spacex ini sebagai tanggapan atas pertanyaan warganet di Twitter yang memintanya untuk memprediksi kapa… [+1675 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Businessinsider.de\"\n            },\n            \"author\": \"Daniel Hüfner\",\n            \"title\": \"„Möchte Tesla nicht mehr in meinem Privatleben haben“\",\n            \"description\": \"Philipp Schröder baute für Elon Musk das Tesla-Geschäft in Deutschland auf. Davon will er inzwischen jedoch nicht mehr viel wissen.\",\n            \"url\": \"https://www.businessinsider.de/gruenderszene/business/philipp-schroeder-1komma5-tesla-d/\",\n            \"urlToImage\": \"https://cdn.businessinsider.de/wp-content/uploads/2022/03/1komma5-philipp-schroeder-tesla-sonnen-manager.jpeg?ver=1647247347\",\n            \"publishedAt\": \"2022-03-18T03:05:00Z\",\n            \"content\": \"Philipp Schröder baute für Elon Musk das Tesla-Geschäft in Deutschland auf. Der Ruhm, der ihm dadurch zuteil wurde, scheint den heutigen Gründer jedoch inzwischen zu nerven.Er ist der wohl bekanntest… [+2754 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"FX Empire\"\n            },\n            \"author\": \"Reuters\",\n            \"title\": \"Tesla restarts production at Shanghai plant after two-day stoppage – sources\",\n            \"description\": \"SHANGHAI (Reuters) -   Tesla resumed production at its Shanghai factory on Friday after a two day suspension, people familiar with the matter said, as movement controls imposed on its workers as part of the city&#039;s efforts to curb the latest COVID-19 outb…\",\n            \"url\": \"https://www.fxempire.com/news/article/tesla-restarts-production-at-shanghai-plant-after-two-day-stoppage-sources-939296\",\n            \"urlToImage\": \"https://responsive.fxempire.com/width/600/webp-lossy-70.q50/_fxempire_/2022/03/tagreuters.com2022newsml_LYNXNPEI2H02M2.jpg\",\n            \"publishedAt\": \"2022-03-18T02:35:17Z\",\n            \"content\": \"SHANGHAI (Reuters) Tesla resumed production at its Shanghai factory on Friday after a two day suspension, people familiar with the matter said, as movement controls imposed on its workers as part of … [+467 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"CNA\"\n            },\n            \"author\": null,\n            \"title\": \"Tesla restarts production at Shanghai plant after two-day stoppage - sources\",\n            \"description\": \"SHANGHAI :     Tesla resumed production at its Shanghai factory on Friday after a two day suspension, people familiar with the matter said, as movement controls imposed on its workers as part of the city's efforts to curb the latest COVID-19 outbreak eased.  …\",\n            \"url\": \"https://www.channelnewsasia.com/business/tesla-restarts-production-shanghai-plant-after-two-day-stoppage-sources-2572516\",\n            \"urlToImage\": \"https://onecms-res.cloudinary.com/image/upload/s--rjedG8ju--/fl_relative,g_south_east,l_one-cms:core:watermark:reuters,w_0.1/f_auto,q_auto/c_fill,g_auto,h_676,w_1200/v1/one-cms/core/2022-03-18t023232z_2_lynxnpei2h02m_rtroptp_3_tesla-china.jpg?itok=7B3H0Qvo\",\n            \"publishedAt\": \"2022-03-18T02:32:32Z\",\n            \"content\": \"SHANGHAI : Tesla resumed production at its Shanghai factory on Friday after a two day suspension, people familiar with the matter said, as movement controls imposed on its workers as part of the city… [+1035 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"reuters\",\n                \"name\": \"Reuters\"\n            },\n            \"author\": null,\n            \"title\": \"Tesla restarts production at Shanghai plant after two-day stoppage -sources - Reuters.com\",\n            \"description\": \"Tesla <a href=\\\"https://www.reuters.com/companies/TSLA.O\\\" target=\\\"_blank\\\">(TSLA.O)</a> resumed production at its Shanghai factory on Friday after a two day suspension, people familiar with the matter said, as movement controls imposed on its workers as part of…\",\n            \"url\": \"https://www.reuters.com/business/autos-transportation/tesla-restarts-production-shanghai-plant-after-two-day-stoppage-sources-2022-03-18/\",\n            \"urlToImage\": \"https://www.reuters.com/resizer/qVL7DC2O9JSd1_MGH4mWbnOwxao=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/DIXVOC5HEZOKRORICKM7BY7ZJY.jpg\",\n            \"publishedAt\": \"2022-03-18T02:32:00Z\",\n            \"content\": \"SHANGHAI, March 18 (Reuters) - Tesla (TSLA.O) resumed production at its Shanghai factory on Friday after a two day suspension, people familiar with the matter said, as movement controls imposed on it… [+1190 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"CleanTechnica\"\n            },\n            \"author\": \"Johnna Crider\",\n            \"title\": \"US Labor Secretary Walsh Tours Tesla’s Giga Texas With Elon Musk\",\n            \"description\": \"US Labor Secretary Marty Walsh was recently given a tour of Giga Texas by Tesla CEO Elon Musk. The visit preceded the planned Giga Texas grand opening, which is scheduled for April 7. The gigafactory is also Tesla’s new headquarters. Axios noted that Musk and…\",\n            \"url\": \"https://cleantechnica.com/2022/03/17/us-labor-secretary-walsh-tours-teslas-giga-texas-with-elon-musk/\",\n            \"urlToImage\": \"https://cleantechnica.com/files/2022/03/Elon-Musk-Marty-Walsh-Tesla-Giga-Texas.jpeg\",\n            \"publishedAt\": \"2022-03-18T02:31:09Z\",\n            \"content\": \"US Labor Secretary Marty Walsh was recently given a tour of Giga Texas by Tesla CEO Elon Musk. The visit preceded the planned Giga Texas grand opening, which is scheduled for April 7. The gigafactory… [+2359 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Yahoo Entertainment\"\n            },\n            \"author\": \"Reuters\",\n            \"title\": \"Tesla restarts production at Shanghai plant after two-day stoppage - sources\",\n            \"description\": \"Tesla resumed production at its Shanghai factory on Friday after a two day suspension, people familiar with the matter said, as movement controls imposed on ...\",\n            \"url\": \"https://finance.yahoo.com/news/tesla-restarts-production-shanghai-plant-023053809.html\",\n            \"urlToImage\": \"https://s.yimg.com/uu/api/res/1.2/Wc7KyKKx9d7uGxnh5_6qsg--~B/aD01MzQ7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters-finance.com/5b38d69909c265ce16a82fb8672085cf\",\n            \"publishedAt\": \"2022-03-18T02:30:53Z\",\n            \"content\": \"SHANGHAI (Reuters) - Tesla resumed production at its Shanghai factory on Friday after a two day suspension, people familiar with the matter said, as movement controls imposed on its workers as part o… [+1042 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"CarScoops\"\n            },\n            \"author\": \"Sebastien Bell\",\n            \"title\": \"Lucid Says It May Also Have To Raise MSRPs, Vows To Honor Prices For Reservation Holders\",\n            \"description\": \"Yet another EV manufacturer says it will have to increase the prices of its vehicles\",\n            \"url\": \"https://www.carscoops.com/2022/03/lucid-says-it-may-also-have-to-raise-msrps-vows-to-honor-prices-for-reservation-holders/\",\n            \"urlToImage\": \"https://www.carscoops.com/wp-content/uploads/2022/03/2022-Lucid-Air-1.jpg\",\n            \"publishedAt\": \"2022-03-18T02:06:47Z\",\n            \"content\": \"Electric vehicle manufacturer Lucid Motors is looking at increasing the prices of its vehicles in the future, citing “huge inflationary pressures.” Its CEO, Peter Rawlinson, says that it is committed… [+1914 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Tech Times\"\n            },\n            \"author\": \"Teejay Boris\",\n            \"title\": \"Elon Musk's Human Mars Landing Year Prediction Pushes Back to a Later Date\",\n            \"description\": \"The CEO and founder of SpaceX, Elon Musk, has a new Mars landing prediction:\",\n            \"url\": \"https://www.techtimes.com/articles/273163/20220317/elon-musk-human-mars-landing-year-prediction-musk-elon-mars-human.htm\",\n            \"urlToImage\": \"https://1734811051.rsc.cdn77.org/data/images/full/400978/spacex-starlink-sunday-launch-now-delayed-will-this-affect-its-whole-2022-satellite-flight-target.jpg\",\n            \"publishedAt\": \"2022-03-18T02:00:00Z\",\n            \"content\": \"Elon Musk shared his human Mars landing year prediction on his Twitter account, pushing it back to a much later date than his previous pronouncements.\\r\\nElon Musk's Human Mars Landing Year Prediction\\r… [+2413 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Drive.com.au\"\n            },\n            \"author\": \"Vani Naidoo\",\n            \"title\": \"With 145 million electric cars by 2030, what are we going to do with the batteries?\",\n            \"description\": \"With some 12 million tonnes of lithium-ion batteries ending their car life by 2030, the race is on to find a feasible recycling program. There is little\",\n            \"url\": \"https://www.drive.com.au/caradvice/with-145-million-electric-cars-by-2030-what-are-we-going-to-do-with-the-batteries/\",\n            \"urlToImage\": \"https://images.drive.com.au/driveau/image/upload/c_fill,h_720,w_1280/q_auto:eco/f_auto/v1/cms/uploads/o7tnanogxdqlc6ntgbxr?_a=AAAH2GX\",\n            \"publishedAt\": \"2022-03-18T01:19:43Z\",\n            \"content\": \"Governments in the United States and Europe are allocating millions of dollars in grant funding to companies exploring more efficient and productive lithium-ion battery recycling while electric car m… [+260 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"La Verdad Noticias\"\n            },\n            \"author\": \"Nain Gamboa\",\n            \"title\": \"Starlink de Elon Musk se convierte en la aplicación más descargada de Ucrania\",\n            \"description\": \"La aplicación Starlink de Elon Musk, que permite a las personas acceder a Internet por satélite, se ha convertido en la aplicación más descargada en Ucrania.\",\n            \"url\": \"https://laverdadnoticias.com/tecnologia/Starlink-de-Elon-Musk-se-convierte-en-la-aplicacion-mas-descargada-de-Ucrania-20220317-0182.html\",\n            \"urlToImage\": \"https://laverdadnoticias.com/__export/1647562616402/sites/laverdad/img/2022/03/17/starlink_de_elon_musk_se_convierte_en_la_aplicacion_mas_descargada_de_ucrania.jpg_673822677.jpg\",\n            \"publishedAt\": \"2022-03-18T00:21:17Z\",\n            \"content\": \"Starlink de Elon Musk se convierte en la aplicación más descargada de Ucrania\\r\\nLa aplicación Starlink de Elon Musk, que permite a las personas acceder a un servicio de Internet por satélite, se ha co… [+2868 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Tinhte.vn\"\n            },\n            \"author\": \"vn_ninja@yahoo.com (vn_ninja), vn_ninja\",\n            \"title\": \"11 chiếc xe Tesla ở Đức bị trộm tháo bánh và nắp chụp moay ơ\",\n            \"description\": \"Báo cáo của cảnh sát địa phương ở Weiterstadt, Đức cho biết một nhóm tội phạm đã đột nhập vào một trung tâm giao hàng của Tesla, lấy đi bánh xe và nắp chụp moay ơ của 11 chiếc xe Tesla khác nhau bao…\",\n            \"url\": \"https://tinhte.vn/thread/11-chiec-xe-tesla-o-duc-bi-trom-thao-banh-va-nap-chup-moay-o.3490312/\",\n            \"urlToImage\": \"https://photo2.tinhte.vn/data/attachment-files/2022/03/5906997_cover_Xe_Tesla_Bi_Thao_Banh_tinhte.jpg\",\n            \"publishedAt\": \"2022-03-18T00:09:20Z\",\n            \"content\": \"Ngoài vic ly bánh xe, nhng k trm còn ly nhng chic np chp moay t 5 chic xe Tesla khác và thm chí còn p v kính mái ca mt chic trong s ó.\\r\\nây là mt hình thc trm cp mi din ra vi xe Tesla vì các báo cáo t… [+73 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Streetsblog.org\"\n            },\n            \"author\": \"Roger Rudick\",\n            \"title\": \"Commentary: Tesla Autopilot Proves Plastic is Never Enough\",\n            \"description\": \"<!-- FeaturedImageEnd -->It wasn't their intent, but Tesla motors clearly shows why concrete is needed to keep vulnerable road users safe\",\n            \"url\": \"https://sf.streetsblog.org/2022/03/17/commentary-tesla-autopilot-proves-plastic-is-never-enough/\",\n            \"urlToImage\": \"https://sf.streetsblog.org/wp-content/uploads/sites/3/2022/03/Screenshot-from-2022-03-17-12-27-37.png\",\n            \"publishedAt\": \"2022-03-18T00:03:33Z\",\n            \"content\": \"Tesla fired an employee after he posted a video of an autonomous car driving erratically and running down plastic bollards that are part of a bicycle safety project in San Jose (the lead image is fro… [+4035 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Electrek\"\n            },\n            \"author\": \"Fred Lambert\",\n            \"title\": \"Tesla still dominates US electric car market and it’s not even close\",\n            \"description\": \"New registration data show that Tesla is still dominating the US electric car market and it’s not even close. Something is going to have to break for EV adoption to accelerate in the country. For years now, Tesla has been dominating the electric auto market i…\",\n            \"url\": \"https://electrek.co/2022/03/17/tesla-still-dominates-us-electric-car-market/\",\n            \"urlToImage\": \"https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2021/10/Tesla-Model-X-Palladium-Hero.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1\",\n            \"publishedAt\": \"2022-03-17T23:50:52Z\",\n            \"content\": \"New registration data show that Tesla is still dominating the US electric car market and it’s not even close.\\r\\nSomething is going to have to break for EV adoption to accelerate in the country.\\r\\nFor y… [+2002 chars]\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "US Top Business Headlines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{newsAPIBaseURL}}/top-headlines?country=us&category=business&apiKey={{newsAPIKey}}",
+							"host": [
+								"{{newsAPIBaseURL}}"
+							],
+							"path": [
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "us"
+								},
+								{
+									"key": "category",
+									"value": "business"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{newsAPIKey}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=775577185d014f8ea8319631775832ae",
+									"protocol": "https",
+									"host": [
+										"newsapi",
+										"org"
+									],
+									"path": [
+										"v2",
+										"top-headlines"
+									],
+									"query": [
+										{
+											"key": "country",
+											"value": "us"
+										},
+										{
+											"key": "category",
+											"value": "business"
+										},
+										{
+											"key": "apiKey",
+											"value": "775577185d014f8ea8319631775832ae"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 18 Mar 2022 04:14:30 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Cached-Result",
+									"value": "false"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=FgVriHoQvTZVYecTGJWKGD%2FC8aBZHFwL%2Bar60humiN40oUMkYJWKWxNCvini2%2B72SJS%2BjjFUaO2tZyHbSiypXYWl%2FR81cZm1Mcl6inQrEa60xw6Ym8Cbcaof5HrI\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "6edb244cbc9e87e1-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"ok\",\n    \"totalResults\": 70,\n    \"articles\": [\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"New York Times\"\n            },\n            \"author\": \"Sharon LaFraniere\",\n            \"title\": \"Moderna Asks FDA to Authorize Second Booster for Adults: Covid Live Updates - The New York Times\",\n            \"description\": \"Canada approves Moderna vaccine for children ages 6 to 11. Thirty-five companies sign on to produce generic versions of Pfizer’s Covid pill.\",\n            \"url\": \"https://www.nytimes.com/live/2022/03/17/world/covid-19-mandates-cases-vaccine\",\n            \"urlToImage\": \"https://static01.nyt.com/images/2022/03/17/multimedia/17-virusbrief-promo-vaxkids/17-virusbrief-promo-vaxkids-facebookJumbo.jpg\",\n            \"publishedAt\": \"2022-03-18T02:40:17Z\",\n            \"content\": \"President Biden participating in a virtual meeting with Prime Minister Micheal Martin of Ireland in the Oval Office on Thursday.Credit...Doug Mills/The New York Times\\r\\nPresident Biden canceled his fa… [+5580 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"reuters\",\n                \"name\": \"Reuters\"\n            },\n            \"author\": null,\n            \"title\": \"Wall Street closes higher as worries ease around Fed, Russian default - Reuters.com\",\n            \"description\": \"All three of Wall Street's major indexes advanced more than 1% on Thursday as investors considered the Federal Reserve's path for interest rate hikes and worries eased about the prospects of a Russian default after creditors received payments.\",\n            \"url\": \"https://www.reuters.com/business/futures-slip-ukraine-jitters-after-fed-driven-rally-2022-03-17/\",\n            \"urlToImage\": \"https://www.reuters.com/resizer/D9YtJreS_e_TZuR01JcBQJ2QSdo=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/MJUBMYBQUVP47PWUB2ORQYGUXA.jpg\",\n            \"publishedAt\": \"2022-03-17T23:37:00Z\",\n            \"content\": \"March 17 (Reuters) - All three of Wall Street's major indexes advanced more than 1% on Thursday as investors considered the Federal Reserve's path for interest rate hikes and worries eased about the … [+4220 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Sarah E. Needleman, Denny Jacob\",\n            \"title\": \"GameStop Shares Fall on Surprise Loss - The Wall Street Journal\",\n            \"description\": \"The videogame retailer posts an adjusted loss of $1.86 a share; analysts were expecting a profit\",\n            \"url\": \"https://www.wsj.com/articles/gamestop-shares-fall-on-surprise-loss-11647550430\",\n            \"urlToImage\": \"https://images.wsj.net/im-506209/social\",\n            \"publishedAt\": \"2022-03-17T23:34:00Z\",\n            \"content\": \"GameStop Corp. recorded a loss during the holiday quarter despite an increase in sales, surprising analysts who were expecting the videogame retailer to turn a profit. \\r\\n GameStop has been working to… [+325 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"YouTube\"\n            },\n            \"author\": null,\n            \"title\": \"Jim Cramer says inventors should buy these 11 recently-boosted dividend stocks - CNBC Television\",\n            \"description\": null,\n            \"url\": \"https://www.youtube.com/supported_browsers?next_url=https:%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DYOFaSSxzBDQ\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2022-03-17T23:15:35Z\",\n            \"content\": \"Your browser isnt supported anymore. Update it to get the best YouTube experience and our latest features. Learn more\\r\\nRemind me later\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"CNBC\"\n            },\n            \"author\": \"Leslie Josephs\",\n            \"title\": \"American Airlines will resume alcohol sales on flights starting April 18 - CNBC\",\n            \"description\": \"American and Southwest last year delayed plans to bring back alcohol because of assaults on crew members.\",\n            \"url\": \"https://www.cnbc.com/2022/03/17/american-airlines-will-resume-alcohol-sales-on-board-april-18.html\",\n            \"urlToImage\": \"https://image.cnbcfm.com/api/v1/image/105473015-1537987912232gettyimages-863830172.jpeg?v=1647442166&w=1920&h=1080\",\n            \"publishedAt\": \"2022-03-17T23:07:50Z\",\n            \"content\": \"American Airlines said Thursday it will resume sales of alcoholic beverages on domestic and short-haul international flights next month, a plan it delayed almost a year ago because of a surge in unru… [+1748 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"CNBC\"\n            },\n            \"author\": \"Krystal Hur\",\n            \"title\": \"Keep trusting money-making companies through market turbulence, Cramer says - CNBC\",\n            \"description\": \"\\\"Stay out of the crosshairs of the young, money-losing stocks,\\\" the \\\"Mad Money\\\" host said Thursday.\",\n            \"url\": \"https://www.cnbc.com/2022/03/17/cramer-keep-trusting-money-making-companies-through-market-turbulence.html\",\n            \"urlToImage\": \"https://image.cnbcfm.com/api/v1/image/104531352-IMG_1181rrr-jim-cramer.jpg?v=1497548243&w=1920&h=1080\",\n            \"publishedAt\": \"2022-03-17T22:44:09Z\",\n            \"content\": \"Investors need to keep their eyes on the prize by choosing companies with tangible results and tuning out the outside noise, CNBC's Jim Cramer said Thursday.\\r\\n\\\"Stay out of the crosshairs of the young… [+1643 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Decrypt\"\n            },\n            \"author\": \"Andrew Hayward\",\n            \"title\": \"ApeCoin: What Is the Bored Ape Ethereum Token and Who Gets It? - Decrypt\",\n            \"description\": \"Bored Ape Yacht Club owners can now claim the token, which will have utility and governance capabilities—plus other potential benefits.\",\n            \"url\": \"https://decrypt.co/95398/apecoin-what-is-bored-ape-ethereum-token-who-gets-it\",\n            \"urlToImage\": \"https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2022/03/apecoin-bored-ape-yacht-club-gID_7.png\",\n            \"publishedAt\": \"2022-03-17T22:24:04Z\",\n            \"content\": \"In brief\\r\\n<ul><li>ApeCoin is a new Ethereum token based on the Bored Ape Yacht Club NFT project.</li><li>Bored Ape NFT holders can claim free tokens, plus it can be purchased at exchanges.</li></ul>\\r… [+5348 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"WSVN 7News | Miami News, Weather, Sports | Fort Lauderdale\"\n            },\n            \"author\": \"\",\n            \"title\": \"Witnesses: employee at NW Miami-Dade Burger King shoots up car driving by outside - WSVN 7News | Miami News, Weather, Sports | Fort Lauderdale\",\n            \"description\": \"NORTHWEST MIAMI-DADE, FLA. (WSVN) - Authorities have responded to a shooting that took place near a Burger King in Northwest Miami-Dade that witnesses say was...\",\n            \"url\": \"https://wsvn.com/news/local/witnesses-employee-at-nw-miami-dade-burger-king-shoots-up-car-driving-by-outside/\",\n            \"urlToImage\": \"https://wsvn.com/wp-content/uploads/sites/2/2022/03/220317_burger-king-shooting-2.png?w=1024\",\n            \"publishedAt\": \"2022-03-17T21:25:31Z\",\n            \"content\": \"NORTHWEST MIAMI-DADE, FLA. (WSVN) - Authorities have responded to a shooting that took place near a Burger King in Northwest Miami-Dade that witnesses say was caused by an employee at the fast food r… [+2317 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"New York Times\"\n            },\n            \"author\": \"Julie Creswell\",\n            \"title\": \"Koch Industries Will Continue to Operate Factories in Russia - The New York Times\",\n            \"description\": \"Koch employs about 600 people in Russia through a unit that makes up a small part of its overall business.\",\n            \"url\": \"https://www.nytimes.com/2022/03/17/business/koch-russia.html\",\n            \"urlToImage\": \"https://static01.nyt.com/newsgraphics/images/icons/defaultPromoCrop.png\",\n            \"publishedAt\": \"2022-03-17T21:11:41Z\",\n            \"content\": \"Koch Industries, the industrial conglomerate run by the billionaire Charles Koch, has said it will continue to operate factories in Russia as other companies pull out after Russias attack on Ukraine.… [+889 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Daily Mail\"\n            },\n            \"author\": \"Gina Martinez\",\n            \"title\": \"Chick-fil-A may be declared a 'public nuisance' by the city of Santa Barbara due to drive-thru lines - Daily Mail\",\n            \"description\": \"Santa Barbara officials are close to declaring a busy Chick-fil-A a 'public nuisance' due to traffic safety concerns caused by the restaurant's long drive-thru lines.\",\n            \"url\": \"https://www.dailymail.co.uk/news/article-10624839/Chick-fil-declared-public-nuisance-city-Santa-Barbara-drive-lines.html\",\n            \"urlToImage\": \"https://i.dailymail.co.uk/1s/2022/03/17/20/55490249-0-image-a-14_1647549993124.jpg\",\n            \"publishedAt\": \"2022-03-17T21:01:26Z\",\n            \"content\": \"California officials are close to declaring a busy Chick-fil-A a 'public nuisance' due to traffic safety concerns caused by the restaurant's long drive-thru lines. \\r\\nEarlier this month the Santa Barb… [+4540 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"business-insider\",\n                \"name\": \"Business Insider\"\n            },\n            \"author\": \"Mary Meisenzahl\",\n            \"title\": \"Burger King says it wants to shut down its 800 restaurants in Russia but it can't - Yahoo! Voices\",\n            \"description\": \"Burger King's franchising agreement means it doesn't have unilateral control of Russian operations.\",\n            \"url\": \"https://www.businessinsider.com/burger-king-wants-to-shut-down-russian-restaurants-2022-3\",\n            \"urlToImage\": \"https://s.yimg.com/ny/api/res/1.2/rcPbYVlcU1KVkp_PsuR58A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD05MDA-/https://s.yimg.com/uu/api/res/1.2/5n8c6fmjlJgCFIilM36ciA--~B/aD0zMzMzO3c9NDQ0NDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/business_insider_articles_888/1bfe50459c1595dedd319d89adc9c463\",\n            \"publishedAt\": \"2022-03-17T21:00:20Z\",\n            \"content\": \"A Burger King store in St. Petersburg, Russia.Maksim Konstantinov/SOPA Images/LightRocket via Getty Images.\\r\\n<ul><li>Burger King parent company president David Shear says the chain wants to close its… [+2757 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Jalopnik\"\n            },\n            \"author\": \"Lawrence Hodge\",\n            \"title\": \"I'm Going To Need Audi To Give Us This Gorgeous A6 Avant E-Tron - Jalopnik\",\n            \"description\": \"But you know we won't ever see this thing on our shores when it goes on sale.\",\n            \"url\": \"https://jalopnik.com/im-going-to-need-audi-to-give-us-this-gorgeous-a6-avant-1848665144\",\n            \"urlToImage\": \"https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/5e8dfa5eb07fbf3482265c211bda2986.jpg\",\n            \"publishedAt\": \"2022-03-17T21:00:00Z\",\n            \"content\": \"Piggybacking off last years A6 e-tron Sportback concept, Audi has teased us with some possible forbidden fruit: an EV wagon. The German luxury brand has debuted a wagon version of its A6 e-tron conce… [+2667 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Electrek\"\n            },\n            \"author\": \"facebook.com/seth.weintraub\",\n            \"title\": \"eCessna? Textron, maker of Cessna and Beechcraft aircraft acquires Pipistrel for eAviation wing - Electrek\",\n            \"description\": \"The electric aviation world got a big shakeup today when Textron, the maker of Iconic small aircraft brands Cessna, Beechcraft, and Bell bought the Slovenian/Italian maker Pipistrel. The new organization has big plans for “eAviation”… Textron eAviation divisi…\",\n            \"url\": \"https://electrek.co/2022/03/17/ecessna-textron-maker-of-cessna-and-beechcraft-aircraft-acquires-pipistrel-for-eaviation-wing/\",\n            \"urlToImage\": \"https://i0.wp.com/electrek.co/wp-content/uploads/sites/3/2022/03/Textron-e-cessna-pipistrel.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1\",\n            \"publishedAt\": \"2022-03-17T20:43:00Z\",\n            \"content\": \"The electric aviation world got a big shakeup today when Textron, the maker of Iconic small aircraft brands Cessna, Beechcraft, and Bell bought the Slovenian/Italian maker Pipistrel. The new organiza… [+3511 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"New York Times\"\n            },\n            \"author\": \"Kellen Browning\",\n            \"title\": \"Uber, Lyft Drivers Struggle With High Gas Prices - The New York Times\",\n            \"description\": \"Some drivers say they find it hard to justify spending hours on the road for Uber or Lyft as fuel costs continue to tick upward.\",\n            \"url\": \"https://www.nytimes.com/2022/03/17/technology/gas-prices-uber-lyft-drivers.html\",\n            \"urlToImage\": \"https://static01.nyt.com/images/2022/03/17/multimedia/17gig-gas1/17gig-gas1-facebookJumbo.jpg\",\n            \"publishedAt\": \"2022-03-17T20:31:50Z\",\n            \"content\": \"Jennifer Montgomery, an UberEats driver in Las Vegas, where gas costs $5 per gallon, agreed that the gas fee doesnt even put a dent in the cost of fuel, which for her has been at least $30 more each … [+957 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Morning Call\"\n            },\n            \"author\": \"Anthony Salamone\",\n            \"title\": \"Air Products continuing to do business in Russia despite war in Ukraine - The Morning Call\",\n            \"description\": \"Air Products is continuing to do business in Russia, despite calls to leave the country because of the war in Ukraine.\",\n            \"url\": \"https://www.mcall.com/business/mc-biz-air-products-russia-20220317-g57kkdrpufh2livtpewbb23vxe-story.html\",\n            \"urlToImage\": \"https://www.mcall.com/resizer/DLjjFMQfKablI-_yC4z8z6q_vFQ=/1200x0/top/cloudfront-us-east-1.images.arcpublishing.com/tronc/IZIKHVTXXVCVNL2Q5XK3RNP4KI.jpg\",\n            \"publishedAt\": \"2022-03-17T20:29:17Z\",\n            \"content\": \"Global industrial gases giant Air Products is one of about three dozen American companies continuing to do business as usual in Russia, which last month invaded neighboring Ukraine.\\r\\nThat continues d… [+4146 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Kitco NEWS\"\n            },\n            \"author\": \"http://www.facebook.com/kitconews\",\n            \"title\": \"Commodity chaos triggers double-digit gains for gold price as war in Ukraine enters fourth week - Kitco NEWS\",\n            \"description\": \"\",\n            \"url\": \"https://www.kitco.com/news/2022-03-17/Commodity-chaos-triggers-double-digit-gains-for-gold-price-as-war-in-Ukraine-enters-fourth-week.html\",\n            \"urlToImage\": \"https://www.kitco.com/news/2022-03-17/images/shutterstock_2100588973-min.jpg\",\n            \"publishedAt\": \"2022-03-17T20:23:00Z\",\n            \"content\": \"(Kitco News) Precious metals are back at the top of the leader board, posting double-digit gains as the volatile commodity space keeps investors looking at gold, palladium, silver, and platinum.\\r\\nOn … [+4427 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"MarketWatch\"\n            },\n            \"author\": \"Philip van Doorn\",\n            \"title\": \"17 oil stocks, including Warren Buffett favorite Occidental Petroleum, that are expected to book the highest free cash flow - MarketWatch\",\n            \"description\": \"High free cash flow, strong demand for oil and low capital spending are setting up good times for investors\",\n            \"url\": \"https://www.marketwatch.com/story/17-oil-stocks-including-warren-buffett-favorite-occidental-petroleum-that-are-expected-to-book-the-highest-free-cash-flow-11647530943\",\n            \"urlToImage\": \"https://images.mktw.net/im-382169/social\",\n            \"publishedAt\": \"2022-03-17T20:10:00Z\",\n            \"content\": \"The price action has been nothing short of breathtaking oil has swung by $55 a barrel this year. On Thursday alone, it surged by more than 7% after peace negotiations stalled in Ukraine and billionai… [+7158 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Yahoo Entertainment\"\n            },\n            \"author\": \"Business Wire\",\n            \"title\": \"FedEx Corp. Reports Higher Third Quarter Earnings - Yahoo Finance\",\n            \"description\": \"MEMPHIS, Tenn., March 17, 2022--FedEx Corp. (NYSE: FDX) today reported financial results for the quarter ended February 28.\",\n            \"url\": \"https://finance.yahoo.com/news/fedex-corp-reports-higher-third-200300859.html\",\n            \"urlToImage\": \"https://s.yimg.com/uu/api/res/1.2/h0a5haj1JLrSUPGqD8oDIg--~B/aD0xMDE7dz0yMDY7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/business-wire.com/9959989503cc83561a84003d5e8f07d4\",\n            \"publishedAt\": \"2022-03-17T20:03:00Z\",\n            \"content\": \"Operating Income of $1.3 Billion, Up 32% Year Over Year; Up 37% on an Adjusted Basis\\r\\nStrong Earnings Growth Expected in Fourth Quarter\\r\\nMEMPHIS, Tenn., March 17, 2022--(BUSINESS WIRE)--FedEx Corp. (… [+25226 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"cnn\",\n                \"name\": \"CNN\"\n            },\n            \"author\": \"Matt Egan, CNN Business\",\n            \"title\": \"Oil spikes back above $100 as Russia fears grow - CNN\",\n            \"description\": \"Oil prices surged Thursday back above $100 a barrel on renewed concerns about the war in Ukraine disrupting Russia's energy supplies.\",\n            \"url\": \"https://www.cnn.com/2022/03/17/business/oil-gas-prices-russia/index.html\",\n            \"urlToImage\": \"https://cdn.cnn.com/cnnnext/dam/assets/220317130955-us-crude-oil-0314-super-tease.jpg\",\n            \"publishedAt\": \"2022-03-17T19:57:00Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Hollywood Reporter\"\n            },\n            \"author\": \"Alex Weprin\",\n            \"title\": \"Endeavor CEO Ari Emanuel’s 2021 Pay Package Tops $308M Thanks to IPO Equity - Hollywood Reporter\",\n            \"description\": \"In his first year leading a publicly traded company, Endeavor founder and CEO Ari Emanuel received a pay package that topped $308 million, thanks almost entirely to a one-time restricted stock grant, which is tied to performance. In its annual report with the…\",\n            \"url\": \"https://www.hollywoodreporter.com/business/business-news/ari-emanuels-2021-pay-package-1235113583/\",\n            \"urlToImage\": \"https://www.hollywoodreporter.com/wp-content/uploads/2022/03/GettyImages-1309826391-H-2022.jpg?w=1024\",\n            \"publishedAt\": \"2022-03-17T19:53:24Z\",\n            \"content\": \"In his first year leading a publicly traded company, Endeavor founder and CEO Ari Emanuel received a pay package that topped $308 million, thanks almost entirely to a one-time restricted stock grant,… [+3047 chars]\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "TechCrunch Top Headlines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{newsAPIBaseURL}}/top-headlines?sources=techcrunch&apiKey={{newsAPIKey}}",
+							"host": [
+								"{{newsAPIBaseURL}}"
+							],
+							"path": [
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "sources",
+									"value": "techcrunch"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{newsAPIKey}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{newsAPIBaseURL}}/top-headlines?sources=techcrunch&apiKey={{newsAPIKey}}",
+									"host": [
+										"{{newsAPIBaseURL}}"
+									],
+									"path": [
+										"top-headlines"
+									],
+									"query": [
+										{
+											"key": "sources",
+											"value": "techcrunch"
+										},
+										{
+											"key": "apiKey",
+											"value": "{{newsAPIKey}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 18 Mar 2022 04:21:09 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Cached-Result",
+									"value": "false"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=hWNN1nDyVDvr%2FP%2BH1q87JPda%2BV9jKw6u6r2t309wLVkZML2f6wk2qi78Arb2073xTu7EPfUg8weU%2BeTyqX%2FQOQd92tYJNB0xRu4IVFGR6dTA%2BLUqU09EA%2Bdmqtfg\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "6edb2e0f6fb987e1-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"ok\",\n    \"totalResults\": 10,\n    \"articles\": [\n        {\n            \"source\": {\n                \"id\": \"techcrunch\",\n                \"name\": \"TechCrunch\"\n            },\n            \"author\": \"David Etue\",\n            \"title\": \"Don’t buy a breach or a bad reputation: A more effective approach to M&A due diligence\",\n            \"description\": \"You can begin intelligence-driven investigation and evaluation much earlier without needing network access or information sharing.\",\n            \"url\": \"https://techcrunch.com/2022/03/17/dont-buy-a-breach-or-a-bad-reputation-a-more-effective-approach-to-ma-due-diligence/\",\n            \"urlToImage\": \"https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1378834014.jpg?w=600\",\n            \"publishedAt\": \"2022-03-17T23:56:37Z\",\n            \"content\": \"Companies invest significant time and energy to integrate networks and applications after an acquisition. However, the acquiring IT, security and intelligence teams rarely have the resources or inter… [+2692 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"techcrunch\",\n                \"name\": \"TechCrunch\"\n            },\n            \"author\": \"Alex Wilhelm\",\n            \"title\": \"Daily Crunch: $8.5B Amazon-MGM merger will bring thousands of titles to Prime Video\",\n            \"description\": \"Hello friends and welcome to Daily Crunch, bringing you the most important startup, tech and venture capital news in a single package.\",\n            \"url\": \"https://techcrunch.com/2022/03/17/daily-crunch-8-5b-amazon-mgm-merger-will-bring-thousands-of-titles-to-prime-video/\",\n            \"urlToImage\": \"https://techcrunch.com/wp-content/uploads/2022/03/amazon-mgm.webp?w=711\",\n            \"publishedAt\": \"2022-03-17T22:30:49Z\",\n            \"content\": \"To get a roundup of TechCrunchs biggest and most important stories delivered to your inbox every day at 3 p.m. PT, subscribe here.\\r\\nHello and welcome to Daily Crunch for Thursday, March 17, 2022! We … [+6454 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"techcrunch\",\n                \"name\": \"TechCrunch\"\n            },\n            \"author\": \"Marcelo Wiermann\",\n            \"title\": \"How to hire great engineers when you don't have any technical expertise\",\n            \"description\": \"Recruiting a winning engineering team can be intimidating, especially for first-time and non-technical founders.\",\n            \"url\": \"https://techcrunch.com/2022/03/17/how-to-hire-great-engineers-when-you-dont-have-any-technical-expertise/\",\n            \"urlToImage\": \"https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1300261958.jpg?w=600\",\n            \"publishedAt\": \"2022-03-17T21:59:08Z\",\n            \"content\": \"Recruiting a winning engineering team can be intimidating, especially for first-time and non-technical founders.\\r\\nI’ve served at multiple startups and established tech companies worldwide, and have h… [+2650 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"techcrunch\",\n                \"name\": \"TechCrunch\"\n            },\n            \"author\": \"Aisha Malik\",\n            \"title\": \"PayPal expands services to allow users to send money to Ukrainians\",\n            \"description\": \"PayPal is expanding its services to allow its users to send money to Ukrainians, the company announced on Thursday. Prior to this expansion, users in Ukraine could only use PayPal to send money out of the country. The expansion allows Ukrainian PayPal account…\",\n            \"url\": \"https://techcrunch.com/2022/03/17/paypal-allow-customers-send-money-ukrainians/\",\n            \"urlToImage\": \"https://techcrunch.com/wp-content/uploads/2021/02/GettyImages-1184251295.jpg?w=600\",\n            \"publishedAt\": \"2022-03-17T21:56:06Z\",\n            \"content\": \"PayPal is expanding its services to allow its users to send money to Ukrainians, the company announced on Thursday. Prior to this expansion, users in Ukraine could only use PayPal to send money out o… [+2528 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"techcrunch\",\n                \"name\": \"TechCrunch\"\n            },\n            \"author\": \"Amanda Silberling\",\n            \"title\": \"Flickr is paywalling the ability to upload NSFW photos\",\n            \"description\": \"Flickr isn’t very good at making money, but as the old adage goes, sex sells. So, in an attempt to draw in more paying subscribers, Flickr changed its content guidelines to only allow Flickr Pro users to post “restricted” or “moderate” content, which includes…\",\n            \"url\": \"https://techcrunch.com/2022/03/17/flickr-paywall-nsfw-photos/\",\n            \"urlToImage\": \"https://techcrunch.com/wp-content/uploads/2018/11/flickr-logo-watercolor.jpg?w=711\",\n            \"publishedAt\": \"2022-03-17T21:39:24Z\",\n            \"content\": \"Flickr isn’t very good at making money, but as the old adage goes, sex sells. So, in an attempt to draw in more paying subscribers, Flickr changed its content guidelines to only allow Flickr Pro user… [+2821 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"techcrunch\",\n                \"name\": \"TechCrunch\"\n            },\n            \"author\": \"Emma Betuel\",\n            \"title\": \"Injectsense collects $1.7M grant for its eye implant smaller than a grain of rice\",\n            \"description\": \"If you were to accidentally drop the eye sensor developed by Injectsense you’d have little chance of finding it. Ariel Cao, the founder and CEO, admits as much. But once it’s been implanted into the back of your eye, it can remain there, basically immobile fo…\",\n            \"url\": \"https://techcrunch.com/2022/03/17/injectsense-collects-1-7m-grant-for-its-eye-implant-smaller-than-a-grain-of-rice/\",\n            \"urlToImage\": \"https://techcrunch.com/wp-content/uploads/2022/03/injectsense-sensor-scale.jpg?w=607\",\n            \"publishedAt\": \"2022-03-17T21:19:37Z\",\n            \"content\": \"If you were to accidentally drop the eye sensor developed by Injectsense youd have little chance of finding it. Ariel Cao, the founder and CEO, admits as much. But once its been implanted into the ba… [+6341 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"techcrunch\",\n                \"name\": \"TechCrunch\"\n            },\n            \"author\": \"Ben Tigner\",\n            \"title\": \"4 eVTOL trends moving the air taxi industry closer to takeoff\",\n            \"description\": \"The billions raised by eVTOL companies last year mean one thing for 2022 – massive growth. These trends will influence how entrepreneurs and investors participate in the burgeoning eVTOL ecosystem.\",\n            \"url\": \"https://techcrunch.com/2022/03/17/4-evtol-trends-moving-the-air-taxi-industry-closer-to-takeoff/\",\n            \"urlToImage\": \"https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1236492043.jpg?w=641\",\n            \"publishedAt\": \"2022-03-17T19:50:50Z\",\n            \"content\": \"Its likely that if you hadnt previously heard of eVTOLs (electric vertical takeoff and landing aircraft), they might have made their way onto your radar last year.\\r\\nBetween the billions of dollars in… [+2521 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"techcrunch\",\n                \"name\": \"TechCrunch\"\n            },\n            \"author\": \"Taylor Hatmaker\",\n            \"title\": \"Elden Ring made me a From Software believer\",\n            \"description\": \"Elden Ring is the latest game in the storied tradition of punishing, mysterious titles by developer From Software, following fiercely-loved hits like the Dark Souls series and Bloodborne. I’ve wanted to love these games for a long time. I’ve followed the rele…\",\n            \"url\": \"https://techcrunch.com/2022/03/17/elden-ring-review-from-software-gaming-experience/\",\n            \"urlToImage\": \"https://techcrunch.com/wp-content/uploads/2022/03/elden-ring-2.jpeg?w=711\",\n            \"publishedAt\": \"2022-03-17T19:16:26Z\",\n            \"content\": \"Elden Ring is the latest game in the storied tradition of punishing, mysterious titles by developer From Software, following fiercely-loved hits like the Dark Souls series and Bloodborne. I’ve wanted… [+7966 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"techcrunch\",\n                \"name\": \"TechCrunch\"\n            },\n            \"author\": \"Brian Heater\",\n            \"title\": \"The gyms have reopened, but investors are still betting on Hydrow’s home rower\",\n            \"description\": \"The home fitness craze has, predictably, died down somewhat since the height of pandemic-fueled buying sprees. Category leader Peloton is smarting from gym reopenings (among lots of other things) in a major way. Still, connected fitness predates COVID-19, and…\",\n            \"url\": \"https://techcrunch.com/2022/03/17/the-gyms-have-reopened-but-investors-are-still-betting-on-hydrows-home-rower/\",\n            \"urlToImage\": \"https://techcrunch.com/wp-content/uploads/2022/03/Hydrow_Fall_2020_DSCF1806_LIGHT.jpg?w=600\",\n            \"publishedAt\": \"2022-03-17T18:39:50Z\",\n            \"content\": \"The home fitness craze has, predictably, died down somewhat since the height of pandemic-fueled buying sprees. Category leader Peloton is smarting from gym reopenings (among lots of other things) in … [+2436 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"techcrunch\",\n                \"name\": \"TechCrunch\"\n            },\n            \"author\": \"Aisha Malik\",\n            \"title\": \"Meta to test new tools to give brands control over ad placement on its platforms later this year\",\n            \"description\": \"Meta, formerly known as Facebook, says it will begin testing new content tools designed to give advertisers control over where their ads are shown on Facebook and Instagram feeds, the company announced on Thursday. The tools will allow companies to prevent th…\",\n            \"url\": \"https://techcrunch.com/2022/03/17/meta-test-tools-brands-control-over-ad-placement-platform/\",\n            \"urlToImage\": \"https://techcrunch.com/wp-content/uploads/2021/11/facebook-meta-rotate-pattern.jpg?w=711\",\n            \"publishedAt\": \"2022-03-17T18:30:55Z\",\n            \"content\": \"Meta, formerly known as Facebook, says it will begin testing new content tools designed to give advertisers control over where their ads are shown on Facebook and Instagram feeds, the company announc… [+2875 chars]\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Last 6 Months Wall Street Journal Articles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{newsAPIBaseURL}}/everything?domains=wsj.com&apiKey={{newsAPIKey}}",
+							"host": [
+								"{{newsAPIBaseURL}}"
+							],
+							"path": [
+								"everything"
+							],
+							"query": [
+								{
+									"key": "domains",
+									"value": "wsj.com"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{newsAPIKey}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{newsAPIBaseURL}}/everything?domains=wsj.com&apiKey={{newsAPIKey}}",
+									"host": [
+										"{{newsAPIBaseURL}}"
+									],
+									"path": [
+										"everything"
+									],
+									"query": [
+										{
+											"key": "domains",
+											"value": "wsj.com"
+										},
+										{
+											"key": "apiKey",
+											"value": "{{newsAPIKey}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 18 Mar 2022 04:22:18 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Cached-Result",
+									"value": "false"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=lLpJctCc4KrTDH6Ps5TjGZRAa8F3ZndKfFgbCyURqK9a1sKyyrL9JKeU9EZgDBdjv6A6eTQmb8E615MKRZB%2F6b%2Fahzlht0ugqlMvMQd7MArI4%2Fnq3Adwh80ur%2B1X\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "6edb2fbe8eaf87e1-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"ok\",\n    \"totalResults\": 682,\n    \"articles\": [\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Katherine Sayre\",\n            \"title\": \"Barry Diller's Gambling License Delayed by Regulator Over Investigation Into Trading...\",\n            \"description\": \"Barry Diller's Gambling License Delayed by Regulator Over Investigation Into Trading...\\r\\n\\n \\n \\n \\n (Third column, 1st story, link)\\r\\n\\n \\r\\n\\n \\r\\n\\n \\n \\n Drudge Report Feed needs your support!   Become a Patron\",\n            \"url\": \"https://www.wsj.com/articles/mgm-resorts-stakeholder-barry-dillers-gambling-license-is-delayed-by-regulator-11647555581\",\n            \"urlToImage\": \"https://images.wsj.net/im-507078/social\",\n            \"publishedAt\": \"2022-03-18T02:40:40Z\",\n            \"content\": \"The top gambling regulator in Nevada on Thursday delayed MGM Resorts International stakeholder Barry Dillers licensing after federal authorities launched insider-trading investigations into his share… [+571 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Alison Sider\",\n            \"title\": \"AA to Resume Alcohol Sales Next Month...\",\n            \"description\": \"AA to Resume Alcohol Sales Next Month...\\r\\n\\n \\n \\n \\n (First column, 6th story, link)\\r\\n\\n \\r\\n\\n \\r\\n\\n \\n Related stories:FAUCI WARNS OF MORE LOCKDOWNS IF SPIKE...\\r\\n'We can't just say we're done!'\\r\\nMODERNA CEO sold $400 million in stock during pandemic...\\r\\nSTUDY: 4th sh…\",\n            \"url\": \"https://www.wsj.com/articles/american-airlines-to-resume-alcohol-sales-next-month-11647563278\",\n            \"urlToImage\": \"https://images.wsj.net/im-507339/social\",\n            \"publishedAt\": \"2022-03-18T02:40:37Z\",\n            \"content\": \"American Airlines Group Inc.\\r\\n AAL 0.49%\\r\\nwill resume selling alcoholic beverages on many domestic flights next montha plan it put off last year in an effort to tamp down on unruly passenger behavior… [+1602 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Peter Loftus\",\n            \"title\": \"Moderna Asks FDA to Clear Second Covid-19 Booster Dose\",\n            \"description\": \"The company requested authorization of the extra shot for any adult who got a first booster dose.\",\n            \"url\": \"https://www.wsj.com/articles/moderna-asks-fda-to-clear-second-covid-19-booster-dose-11647567876\",\n            \"urlToImage\": \"https://images.wsj.net/im-507353/social\",\n            \"publishedAt\": \"2022-03-18T01:46:46Z\",\n            \"content\": \"Moderna Inc. has asked the Food and Drug Administration to authorize a second booster dose of its Covid-19 vaccine for adults in the U.S.\\r\\nThe Cambridge, Mass., company said Thursday the dose could b… [+97 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Theo Francis\",\n            \"title\": \"GE Cuts Larry Culp’s 2022 Pay After Shareholder Protest - The Wall Street Journal\",\n            \"description\": \"<ol><li>GE Cuts Larry Culp’s 2022 Pay After Shareholder Protest  The Wall Street Journal\\r\\n</li><li>GE CEO Larry Culp agrees to pay cut after shareholder protest  MarketWatch\\r\\n</li><li>GE cuts CEO Culp's incentive grant after shareholder rebuke  Reuters.com\\r\\n<…\",\n            \"url\": \"https://www.wsj.com/articles/ge-cuts-larry-culps-2022-pay-after-shareholder-protest-11647558719\",\n            \"urlToImage\": \"https://images.wsj.net/im-507304/social\",\n            \"publishedAt\": \"2022-03-18T00:12:00Z\",\n            \"content\": \"General Electric Co. said Chief Executive Larry Culp agreed to reduce his potential compensation by about $10 million this year, responding to shareholder concerns over changes that GEs board made to… [+363 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Robert Schroeder\",\n            \"title\": \"习近平和拜登将于周五通话讨论乌克兰问题 - Wall Street Journal\",\n            \"description\": \"<ol><li>习近平和拜登将于周五通话讨论乌克兰问题  Wall Street Journal\\r\\n</li><li>拜登将警告习近平如军援俄罗斯将付出代价  RFI - 法国国际广播电台\\r\\n</li><li>【新聞看點】美再援烏8億元 揭「彈簧刀」面紗  大纪元\\r\\n</li><li>中国经济体量巨大，如若犯台，西方难制裁？专家：那不一定  美国之音中文网 - VOA Mandarin\\r\\n</li><li>拜习通话美方先亮底牌 且看习近平如何回答  RFI - 法国国际广播电台\\r\\n</li><li>在Google…\",\n            \"url\": \"https://cn.wsj.com/articles/拜登和习近平将于周五通话讨论乌克兰问题-11647559556\",\n            \"urlToImage\": \"https://images.wsj.net/im-412862/social\",\n            \"publishedAt\": \"2022-03-18T00:11:00Z\",\n            \"content\": \"\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Isabelle Bousquette\",\n            \"title\": \"Longtime UPS Tech Leader Juan Perez to Join Salesforce as CIO - The Wall Street Journal\",\n            \"description\": \"Longtime UPS Tech Leader Juan Perez to Join Salesforce as CIO  The Wall Street Journal\",\n            \"url\": \"https://www.wsj.com/articles/longtime-ups-tech-leader-juan-perez-to-join-salesforce-as-cio-11647557775\",\n            \"urlToImage\": \"https://images.wsj.net/im-507177/social\",\n            \"publishedAt\": \"2022-03-17T23:56:00Z\",\n            \"content\": \"United Parcel Service Inc.s Chief Information and Engineering Officer\\r\\nJuan Perez\\r\\nis leaving this month after 32 years with the logistics company to become CIO of software company Salesforce.com Inc… [+3288 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Evan Gershkovich\",\n            \"title\": \"How Marina Ovsyannikova Became Russia’s Most Visible Antiwar Protester - The Wall Street Journal\",\n            \"description\": \"<ol><li>How Marina Ovsyannikova Became Russia’s Most Visible Antiwar Protester  The Wall Street Journal\\r\\n</li><li>Russian TV employee behind on-air anti-war protest speaks out  CBS News\\r\\n</li><li>Russian TV protester resigns, turns down asylum offer  Al Jazee…\",\n            \"url\": \"https://www.wsj.com/articles/marina-ovsyannikova-russia-journalist-protester-11647544898\",\n            \"urlToImage\": \"https://images.wsj.net/im-506859/social\",\n            \"publishedAt\": \"2022-03-17T21:47:27Z\",\n            \"content\": \"It wasnt long after Russian troops pushed into Ukraine three weeks ago, Marina Ovsyannikova says, that she decided she had to make her voice heard.\\r\\nA television producer at the Kremlins flagship net… [+172 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Lingling Wei, Alex Leary\",\n            \"title\": \"Xi and Biden Prepare to Talk as U.S.-China Distrust Mounts - The Wall Street Journal\",\n            \"description\": \"<ol><li>Xi and Biden Prepare to Talk as U.S.-China Distrust Mounts  The Wall Street Journal\\r\\n</li><li>Live: White House holds briefing ahead of Biden's talk with Xi Jinping  The Independent\\r\\n</li><li>Biden to talk about war in Ukraine with Chinese President X…\",\n            \"url\": \"https://www.wsj.com/articles/xi-and-biden-prepare-to-talk-as-u-s-china-distrust-mounts-11647549209\",\n            \"urlToImage\": \"https://images.wsj.net/im-506843/social\",\n            \"publishedAt\": \"2022-03-17T21:41:00Z\",\n            \"content\": \"President Biden and Chinese leader Xi Jinping plan to confer as the U.S. works to deter China from deeper involvement with Russia during its invasion of Ukraine.The call, scheduled for Friday, comes … [+7067 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Sam Schechner, Tim Higgins\",\n            \"title\": \"APPLE App Store to Face Significant Challenge From New European Law...\",\n            \"description\": \"APPLE App Store to Face Significant Challenge From New European Law...\\r\\n\\n \\n \\n \\n (Second column, 14th story, link)\\r\\n\\n \\r\\n\\n \\r\\n\\n \\n Related stories:Antitrust enforcers won't challenge AMAZON's MGM deal...\",\n            \"url\": \"https://www.wsj.com/articles/apples-hold-on-app-store-set-to-face-significant-challenge-from-new-european-law-11647520201\",\n            \"urlToImage\": \"https://images.wsj.net/im-506123/social\",\n            \"publishedAt\": \"2022-03-17T21:28:48Z\",\n            \"content\": \"Apple Inc.\\r\\n AAPL 0.65%\\r\\nis facing one of the biggest challenges yet to how it controls and profits from the App Store as Europe prepares to complete a new competition law in the coming weeks.The new… [+6792 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Ann M. Simmons, The Wall Street Journal\",\n            \"title\": \"In Rural Russia, Locals Blame the West for Conflict in Ukraine, Back Putin - The Wall Street Journal\",\n            \"description\": \"<ol><li>In Rural Russia, Locals Blame the West for Conflict in Ukraine, Back Putin  The Wall Street Journal\\r\\n</li><li>Fact Check-Russian TV show clip predates the 2022 Russian invasion of Ukraine  Reuters.com\\r\\n</li><li>View Full Coverage on Google News</li></…\",\n            \"url\": \"https://www.wsj.com/articles/in-rural-russia-locals-blame-the-west-for-conflict-in-ukraine-back-putin-11647541758\",\n            \"urlToImage\": \"https://images.wsj.net/im-506907/social\",\n            \"publishedAt\": \"2022-03-17T19:29:00Z\",\n            \"content\": \"TORZHOK, RussiaMore than a hundred cars, many festooned with Russian flags and plastered with stickers proclaiming For Russia! For Victory! converged on the main square of this small town in a show o… [+276 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Josh Chin\",\n            \"title\": \"China Investigates Official Who Promoted Respect for Islam...\",\n            \"description\": \"China Investigates Official Who Promoted Respect for Islam...\\r\\n\\n \\n \\n \\n (Second column, 11th story, link)\\r\\n\\n \\r\\n\\n \\r\\n\\n \\n \\n Drudge Report Feed needs your support!   Become a Patron\",\n            \"url\": \"https://www.wsj.com/articles/china-launches-investigation-into-official-who-promoted-respect-for-islam-11647512073\",\n            \"urlToImage\": \"https://images.wsj.net/im-506053/social\",\n            \"publishedAt\": \"2022-03-17T19:07:39Z\",\n            \"content\": \"TAIPEIChinas Communist Party has authorized a corruption inquiry into a senior official who was previously an influential advocate of Muslim culture, according to people familiar with the matter, in … [+415 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Veronica Dagher, Mauro Orru, Natalie Andrews, Teresa Mettela, Benjamin Katz\",\n            \"title\": \"Russia-Ukraine War News Live Updates: Mariupol Evacuees Leave the Besieged City - The Wall Street Journal\",\n            \"description\": \"<ol><li>Russia-Ukraine War News Live Updates: Mariupol Evacuees Leave the Besieged City  The Wall Street Journal\\r\\n</li><li>Ukrainian defense minister: Russian who bombed theater is a \\\"monster\\\"  CNN\\r\\n</li><li>Ukraine official: People are 'coming out alive' aft…\",\n            \"url\": \"https://www.wsj.com/livecoverage/russia-ukraine-latest-news-2022-03-17\",\n            \"urlToImage\": \"https://images.wsj.net/im-506627/social\",\n            \"publishedAt\": \"2022-03-17T18:59:05Z\",\n            \"content\": \"Some lawmakers are continuing to press the White House to embrace Ukraines call for jet fighters, a move the administration has rejected, while others are warning such a move wouldnt be practical and… [+1866 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Ann-marie Alcántara\",\n            \"title\": \"Strava Hires Taco Bell Executive to Lead Marketing Efforts\",\n            \"description\": \"Zipporah Allen joins as the fitness company’s new chief marketing officer\",\n            \"url\": \"https://www.wsj.com/articles/strava-hires-taco-bell-executive-to-lead-marketing-efforts-11647532801\",\n            \"urlToImage\": \"https://images.wsj.net/im-506475/social\",\n            \"publishedAt\": \"2022-03-17T16:32:14Z\",\n            \"content\": \"Strava Inc. said it had named Zipporah Allen the companys chief marketing officer as the fitness startup seeks to grow its customer base.Ms. Allen is Stravas second chief marketing officer, filling a… [+2334 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Thomas Grove, Stephen Fidler\",\n            \"title\": \"How Revamped Military Fumbled...\",\n            \"description\": \"How Revamped Military Fumbled...\\r\\n\\n \\n \\n \\n (Top headline, 5th story, link)\\r\\n\\n \\r\\n\\n \\r\\n\\n \\n Related stories:Ukraine Mounts Counteroffensive to Drive Russians Back From Kyiv, Key Cities...\\r\\nUK intel says invasion has stalled on ALL fronts...\\r\\nRuined game plan visib…\",\n            \"url\": \"https://www.wsj.com/articles/russia-putin-revamped-military-ukraine-invasion-11647469602\",\n            \"urlToImage\": \"https://images.wsj.net/im-501678/social\",\n            \"publishedAt\": \"2022-03-17T14:55:37Z\",\n            \"content\": \"For over a decade, Russia spent hundreds of billions of dollars restructuring its military into a smaller, better equipped and more-professional force that could face off against the West.Three weeks… [+14037 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Joanna Stern\",\n            \"title\": \"Apple’s $1,599 Studio Display vs. Other Monitors: You Won’t Get What You Pay For - The Wall Street Journal\",\n            \"description\": \"<ol><li>Apple’s $1,599 Studio Display vs. Other Monitors: You Won’t Get What You Pay For  The Wall Street Journal\\r\\n</li><li>Apple Mac Studio & Mac Studio Display UNBOXING  EFTMOnline\\r\\n</li><li>Review: The Mac Studio shows us exactly why Apple left Intel behin…\",\n            \"url\": \"https://www.wsj.com/articles/apples-1-599-studio-display-vs-other-monitors-you-wont-get-what-you-pay-for-11647521601\",\n            \"urlToImage\": \"https://images.wsj.net/im-506350/social\",\n            \"publishedAt\": \"2022-03-17T14:00:00Z\",\n            \"content\": \"People have two divergent reactions to\\r\\nApples\\r\\n AAPL -0.43%\\r\\nnew $1,599 Studio Display with a webcam and surround-sound speakers:#2 Oh, awesome! How well does it clip my toenails, load the dishwashe… [+7410 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Caitlin Ostroff\",\n            \"title\": \"Citigroup Sits Between Russia and a Possible Bond Default - The Wall Street Journal\",\n            \"description\": \"<ol><li>Citigroup Sits Between Russia and a Possible Bond Default  The Wall Street Journal\\r\\n</li><li>Russia says it made a payment to avoid default  CNN\\r\\n</li><li>Russia on verge of $150B debt default as sanctions cripple economy  Fox Business\\r\\n</li><li>Russi…\",\n            \"url\": \"https://www.wsj.com/articles/citigroup-sits-between-russia-and-a-possible-bond-default-11647520737\",\n            \"urlToImage\": \"https://images.wsj.net/im-506658/social\",\n            \"publishedAt\": \"2022-03-17T13:38:00Z\",\n            \"content\": \"The bank acts as the paying agent, charged with receiving and processing payments into bondholders accounts for the two dollar-denominated bonds issued by Russia. Russias Ministry of Finance said Thu… [+3850 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Joe Flint And Dana Mattioli\",\n            \"title\": \"Amazon Closes Deal to Acquire MGM\",\n            \"description\": \"Tech giant is free to move forward with acquisition of movie and TV studio after deal’s regulatory clock at FTC expired\",\n            \"url\": \"https://www.wsj.com/articles/amazon-closes-deal-to-acquire-mgm-11647523338\",\n            \"urlToImage\": \"https://images.wsj.net/im-506689/social\",\n            \"publishedAt\": \"2022-03-17T13:25:32Z\",\n            \"content\": \"The move comes after Amazon certified to the Federal Trade Commission that it had provided all the information requested by antitrust investigators reviewing the deal. That step put the deal on a reg… [+2518 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Robert Wall, Daniel Michaels\",\n            \"title\": \"Graveyard of Tanks...\",\n            \"description\": \"Graveyard of Tanks...\\r\\n\\n \\n \\n \\n (Top headline, 4th story, link)\\r\\n\\n \\r\\n\\n \\r\\n\\n \\n Related stories:Ukraine Mounts Counteroffensive to Drive Russians Back From Kyiv, Key Cities...\\r\\nUK intel says invasion has stalled on ALL fronts...\\r\\nRuined game plan visible in south…\",\n            \"url\": \"https://www.wsj.com/articles/ukraine-has-become-a-graveyard-for-russian-tanks-11647521721\",\n            \"urlToImage\": \"https://images.wsj.net/im-506629/social\",\n            \"publishedAt\": \"2022-03-17T13:22:36Z\",\n            \"content\": \"Russia began the war in Ukraine with the worlds largest tank force, but the losses it has suffered reveal its weaknesses on the modern battlefield.Moscows forces have lost more than 230 of the heavil… [+6490 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Katherine Sayre, Omar Abdel-Baqui\",\n            \"title\": \"Portnoy Accusations Prompt Scrutiny of BARSTOOL...\",\n            \"description\": \"Gambling regulators in two states are looking into both companies amid sexual-misconduct allegations against Barstool’s founder\",\n            \"url\": \"https://www.wsj.com/articles/dave-portnoy-accusations-prompt-scrutiny-of-barstool-as-penn-national-pursues-acquisition-11647511200\",\n            \"urlToImage\": \"https://images.wsj.net/im-499742/social\",\n            \"publishedAt\": \"2022-03-17T13:04:50Z\",\n            \"content\": \"Gambling regulators in Nevada and Indiana have said they are looking into Barstool and Penn National in the wake of sexual-misconduct accusations against Barstool founder and star personality\\r\\nDave P… [+6251 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-wall-street-journal\",\n                \"name\": \"The Wall Street Journal\"\n            },\n            \"author\": \"Aaron Zitner\",\n            \"title\": \"PA Dems Choose Between Hoodie and Blazer in Senate Primary...\",\n            \"description\": \"PA Dems Choose Between Hoodie and Blazer in Senate Primary...\\r\\n\\n \\n \\n \\n (First column, 10th story, link)\\r\\n\\n \\r\\n\\n \\r\\n\\n \\n Related stories:With legislation languishing and midterms approaching, lawmakers pressure Biden to issue orders...\",\n            \"url\": \"https://www.wsj.com/articles/hoodie-or-blue-blazer-pennsylvania-democrats-choose-between-competing-styles-in-senate-primary-11647518400\",\n            \"urlToImage\": \"https://images.wsj.net/im-506066/social\",\n            \"publishedAt\": \"2022-03-17T13:04:46Z\",\n            \"content\": \"OIL CITY, Pa.John Fetterman showed up in his customary hoodie sweatshirt. With his chin beard and 6-foot-8 frame, he looked more like a delivery worker than the typical occupant of the states second-… [+7449 chars]\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "All Apple Mentioned Articles Yesterday",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{newsAPIBaseURL}}/everything?q=apple&from=2022-03-17&to=2022-03-17&sortBy=popularity&apiKey={{newsAPIKey}}",
+							"host": [
+								"{{newsAPIBaseURL}}"
+							],
+							"path": [
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "apple"
+								},
+								{
+									"key": "from",
+									"value": "2022-03-17"
+								},
+								{
+									"key": "to",
+									"value": "2022-03-17"
+								},
+								{
+									"key": "sortBy",
+									"value": "popularity"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{newsAPIKey}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{newsAPIBaseURL}}/everything?q=apple&from=2022-03-17&to=2022-03-17&sortBy=popularity&apiKey={{newsAPIKey}}",
+									"host": [
+										"{{newsAPIBaseURL}}"
+									],
+									"path": [
+										"everything"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "apple"
+										},
+										{
+											"key": "from",
+											"value": "2022-03-17"
+										},
+										{
+											"key": "to",
+											"value": "2022-03-17"
+										},
+										{
+											"key": "sortBy",
+											"value": "popularity"
+										},
+										{
+											"key": "apiKey",
+											"value": "{{newsAPIKey}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 18 Mar 2022 04:23:10 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Cached-Result",
+									"value": "false"
+								},
+								{
+									"key": "CF-Cache-Status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Expect-CT",
+									"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=afLXeoms9HM8oe1AzHaC3WCNElgDI112rTknzfxYdL12auW%2BUu82cm2Cs2xFDaA%2BQO83opnyeHTqIAVy9z07aWfBY6yWXilbUmu9LPktaIf7vFGvQ7Mn1tmAL5br\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "NEL",
+									"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "6edb30fd2e6c87e1-SIN"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"ok\",\n    \"totalResults\": 2190,\n    \"articles\": [\n        {\n            \"source\": {\n                \"id\": \"engadget\",\n                \"name\": \"Engadget\"\n            },\n            \"author\": \"Jon Fingas\",\n            \"title\": \"Tile will help you scan for unwanted tracking tags\",\n            \"description\": \"Apple isn't the only tracking tag company making it harder for stalkers and thieves to track you. Tile is rolling out a \\\"Scan and Secure\\\" feature in its Android and iOS apps to help you detect unwanted tags. Use it and the app will check if any suspicious Til…\",\n            \"url\": \"https://www.engadget.com/tile-tag-scan-and-secure-anti-stalking-175822554.html\",\n            \"urlToImage\": \"https://s.yimg.com/os/creatr-uploaded-images/2022-03/d12f0bb0-a618-11ec-bfb9-2f6e4423f7f6\",\n            \"publishedAt\": \"2022-03-17T17:58:22Z\",\n            \"content\": \"Apple isn't the only tracking tag company making it harder for stalkers and thieves to track you. Tile is rolling out a \\\"Scan and Secure\\\" feature in its Android and iOS apps to help you detect unwant… [+1020 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"wired\",\n                \"name\": \"Wired\"\n            },\n            \"author\": \"Brendan Nystedt\",\n            \"title\": \"iPod Modders Give Apple’s Abandoned Music Player New Life\",\n            \"description\": \"By modifying old hardware with modern—and often more colorful—components, listeners create their dream iPods and kick their Spotify habits.\",\n            \"url\": \"https://www.wired.com/story/ipod-modders/\",\n            \"urlToImage\": \"https://media.wired.com/photos/62328f7752a9731157d77d94/191:100/w_1280,c_limit/Modded-iPod-Gear-6898-as-Smart-Object-1.jpg\",\n            \"publishedAt\": \"2022-03-17T11:00:00Z\",\n            \"content\": \"On Tuesday, September 9, 2014, Apple finally killed off the iPod. After almost 13 years on the market, the iconic portable music player was retired without fanfare. The pocket-sized device with the c… [+4390 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"wired\",\n                \"name\": \"Wired\"\n            },\n            \"author\": \"Tom Simonite, Gian M. Volpicelli\",\n            \"title\": \"Ukraine’s Digital Ministry Is a Formidable War Machine\",\n            \"description\": \"A government department run by savvy tech “freaks” has become a surprise defense against Russia.\",\n            \"url\": \"https://www.wired.com/story/ukraine-digital-ministry-war/\",\n            \"urlToImage\": \"https://media.wired.com/photos/62327dc8c404ebbcf282c7ee/191:100/w_1280,c_limit/Ministry-DigitalTransformation-Team-Ukraine-Business.jpg\",\n            \"publishedAt\": \"2022-03-17T11:00:00Z\",\n            \"content\": \"Valeriya Ionan, a deputy minister at Ukraines Ministry for Digital Transformation, was breastfeeding her two-month-old son Mars when the first explosions boomed over Kyiv in the early hours of Februa… [+3704 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"New York Times\"\n            },\n            \"author\": \"Kara Swisher\",\n            \"title\": \"Yuri Milner’s Russian Clapback\",\n            \"description\": \"A Russian-born tech titan takes a bold stance against his birth country’s pummeling of Ukraine.\",\n            \"url\": \"https://www.nytimes.com/2022/03/17/opinion/milner-russia-ukraine.html\",\n            \"urlToImage\": \"https://static01.nyt.com/images/2022/03/17/opinion/17Swisher-image/17Swisher-image-facebookJumbo.jpg\",\n            \"publishedAt\": \"2022-03-17T23:00:07Z\",\n            \"content\": \"This week, both awards go to Mark Zuckerberg.\\r\\nAs hard as he may try, its doubtful he can reach escape velocity from the business that brung him, which is social media. Not that thats stopped the fam… [+2013 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"ars-technica\",\n                \"name\": \"Ars Technica\"\n            },\n            \"author\": \"Tim De Chant\",\n            \"title\": \"Antitrust bill would bar mergers over $5B, allow regulators to unwind others\",\n            \"description\": \"“Big companies have had almost free reign over our economy.”\",\n            \"url\": \"https://arstechnica.com/tech-policy/2022/03/antitrust-bill-would-bar-mergers-over-5b-allow-regulators-to-unwind-others/\",\n            \"urlToImage\": \"https://cdn.arstechnica.net/wp-content/uploads/2015/01/monopoly-640x215.jpg\",\n            \"publishedAt\": \"2022-03-17T16:21:37Z\",\n            \"content\": \"9 with 8 posters participating\\r\\nTwo Democratic lawmakers introduced a new bill on Wednesday that would institute a host of new regulations to scrutinize mergers, including a prohibition of those valu… [+4077 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"reuters\",\n                \"name\": \"Reuters\"\n            },\n            \"author\": null,\n            \"title\": \"U.S. taps GM, Oracle, airline CEOs for Homeland Security advisory panel - Reuters.com\",\n            \"description\": \"The U.S. Homeland Security Department said Thursday it was naming the chief executives of General Motors <a href=\\\"https://www.reuters.com/companies/GM.N\\\" target=\\\"_blank\\\">(GM.N)</a>, United Airlines American Airlines , Bank of America <a href=\\\"https://www.reut…\",\n            \"url\": \"https://www.reuters.com/world/us/us-taps-gm-oracle-airline-ceos-homeland-security-advisory-panel-2022-03-17/\",\n            \"urlToImage\": \"https://www.reuters.com/resizer/XZG4aRQLQtfIJetyQ6pnTFKUbLo=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/HO3JSZI7J5OTBBSA7R7ZJF4G2A.jpg\",\n            \"publishedAt\": \"2022-03-17T19:31:00Z\",\n            \"content\": \"WASHINGTON, March 17 (Reuters) - The U.S. Homeland Security Department said Thursday it was naming the chief executives of General Motors (GM.N), United Airlines American Airlines , Bank of America (… [+2105 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"reuters\",\n                \"name\": \"Reuters\"\n            },\n            \"author\": null,\n            \"title\": \"China's factories opt for isolation bubbles to beat COVID curbs and keep running - Reuters.com\",\n            \"description\": \"To keep factory lines open in the face of COVID curbs Chinese firms are asking workers to eat, sleep and work in bubbles isolated from the wider world, sterilising premises as often as three times a day and testing for COVID daily.\",\n            \"url\": \"https://www.reuters.com/world/china/chinas-factories-opt-isolation-bubbles-beat-covid-curbs-keep-running-2022-03-17/\",\n            \"urlToImage\": \"https://www.reuters.com/resizer/VFqUYmmow3bH3oFEt7q9htiUD1s=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/2VW3PFNIUNJOZJZTKSJT3JNI2Q.jpg\",\n            \"publishedAt\": \"2022-03-17T12:16:00Z\",\n            \"content\": \"SHANGHAI/BEIJING, March 17 (Reuters) - To keep factory lines open in the face of COVID curbs Chinese firms are asking workers to eat, sleep and work in bubbles isolated from the wider world, sterilis… [+3809 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Android Central\"\n            },\n            \"author\": \"chris.wedel@futurenet.com (Chris Wedel)\",\n            \"title\": \"Matter delayed yet again, unified smart home standard to launch Fall 2022\",\n            \"description\": \"Matter, the new communication standard for smart devices is supported by big players like Google, Amazon, Apple, and more is seeing additional delays as the platform interest increases.\",\n            \"url\": \"https://www.androidcentral.com/accessories/smart-home/matter-delayed-yet-again-unified-smart-home-standard-to-launch-fall-2022\",\n            \"urlToImage\": \"https://cdn.mos.cms.futurecdn.net/NL5YfRXP4iiK4gvfFQMgwi-1200-80.jpg\",\n            \"publishedAt\": \"2022-03-17T19:09:13Z\",\n            \"content\": \"<ul><li>Matter, the upcoming new IoT standard, has been further delayed until Fall 2022. </li><li>An additional device certification event has been added for Summer 2022. </li><li>The new standard ai… [+2102 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Android Central\"\n            },\n            \"author\": \"chris.wedel@futurenet.com (Chris Wedel)\",\n            \"title\": \"Apple iPhone SE (2022) vs. Google Pixel 5a: The budget flagship showdown\",\n            \"description\": \"Google and Apple both offer some of the best smartphones in the game. When deciding between the two newest budget options from each brand, the choice can get a bit dicey.\",\n            \"url\": \"https://www.androidcentral.com/phones/apple-iphone-se-2022-vs-google-pixel-5a-the-budget-flagship-showdown\",\n            \"urlToImage\": \"https://cdn.mos.cms.futurecdn.net/RAx9KxnaJGfEptzBWgYtjG-1200-80.jpg\",\n            \"publishedAt\": \"2022-03-17T22:30:37Z\",\n            \"content\": \"The Google Pixel 5a and the Apple iPhone SE represent the budget device for each brand. Each phone has as many features and specs as possible, but with a few compromises to keep the price down. Typic… [+9717 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Android Central\"\n            },\n            \"author\": \"Michael L Hicks\",\n            \"title\": \"How to get a smartwatch or fitness tracker for free\",\n            \"description\": \"Attain by Aetna, Blue Cross Blue Shield, Medicare, and other health care providers offer plenty of options to kickstart your fitness routine for free\",\n            \"url\": \"https://www.androidcentral.com/wearables/how-to-get-a-smartwatch-or-fitness-tracker-for-free\",\n            \"urlToImage\": \"https://cdn.mos.cms.futurecdn.net/riuvyFyvqSkiBncMojLUVo-1200-80.jpg\",\n            \"publishedAt\": \"2022-03-17T11:00:26Z\",\n            \"content\": \"If you're trying to get healthier in 2022, buying a fitness tracker or smartwatch is a huge step in the right direction. But for some, spending hundreds on a proper fitness or health tracker isn't fi… [+4087 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Android Central\"\n            },\n            \"author\": \"Michael L Hicks\",\n            \"title\": \"Samsung Galaxy S22 vs. iPhone 13\",\n            \"description\": \"Apple's 2021 flagship and Samsung's 2022 flagship both have plenty of perks going for them, but which should you buy?\",\n            \"url\": \"https://www.androidcentral.com/phones/samsung-galaxy-s22-vs-iphone-13\",\n            \"urlToImage\": \"https://cdn.mos.cms.futurecdn.net/W38FVJoGmLK3fddKNE5r8J-1200-80.jpg\",\n            \"publishedAt\": \"2022-03-17T19:30:41Z\",\n            \"content\": \"The Samsung Galaxy S22 and iPhone 13 both target buyers who want premium performance without the flagship pricing or massive displays. Each phone makes some concessions compared to the S22+ or iPhone… [+12699 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Android Central\"\n            },\n            \"author\": \"Derrek Lee\",\n            \"title\": \"Withings Body Cardio review: Locking down my fitness goals\",\n            \"description\": \"The Withings Body Cardio is a great smart scale that gives me a better picture of what I need to focus on during my fitness journey. In my review, I determine whether or not I feel the Body Cardio is worth the hefty price tag.\",\n            \"url\": \"https://www.androidcentral.com/withings-body-cardio-review\",\n            \"urlToImage\": \"https://cdn.mos.cms.futurecdn.net/r2UmQGWBJgNRWhoRHyXkoV-1200-80.jpg\",\n            \"publishedAt\": \"2022-03-17T16:00:00Z\",\n            \"content\": \"It's already March, which means I should be gearing up for the summer. That means more time at the gym and trying to figure out what I need to do to get into my ideal shape before I hit the beaches. … [+9277 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"The Guardian\"\n            },\n            \"author\": \"Presented by Faye Carruthers with Nick Ames, Nicky Bandini and Jordan Jarrett-Bryan. Produced by Joel Grove with Silas Gray and executive produced by Max Sanderson.\",\n            \"title\": \"Chelsea stand firm and Villarreal rock Juventus – Football Weekly Extra\",\n            \"description\": \"Faye Carruthers is joined by Nick Ames, Nicky Bandini and Jordan Jarrett-Bryan after Wednesday’s Champions League and Premier League actionRate, review, share on Apple Podcasts, Soundcloud, Audioboom, Mixcloud, Acast and Stitcher, and join the conversation on…\",\n            \"url\": \"https://www.theguardian.com/football/audio/2022/mar/17/chelsea-stand-firm-and-villarreal-rock-juventus-football-weekly-extra-podcast\",\n            \"urlToImage\": \"https://i.guim.co.uk/img/media/7ef130de02293f238bccbc00c219355366c96ce9/0_75_3999_2399/master/3999.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9bb4f690047b88fac3b9d0044a9ac678\",\n            \"publishedAt\": \"2022-03-17T13:21:06Z\",\n            \"content\": \"Rate, review, share on Apple Podcasts, Soundcloud, Audioboom, Mixcloud, Acast and Stitcher, and join the conversation on Facebook, Twitter and email.\\r\\nOn the podcast today: despite continuing off-fie… [+484 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"MacRumors\"\n            },\n            \"author\": \"Juli Clover\",\n            \"title\": \"Upcoming EU Sideloading Bill Would 'Cripple the Privacy and Security Protections' iPhone Users Expect, Says Apple\",\n            \"description\": \"The European Union is set to introduce new legislation as soon as this month that would significantly affect how the App Store operates in Europe, reports The Wall Street Journal.\\n\\n\\n\\n\\n\\nThe Digital Markets Act has been in development for some time and the fina…\",\n            \"url\": \"https://www.macrumors.com/2022/03/17/eu-sideloading-bill-coming-soon/\",\n            \"urlToImage\": \"https://images.macrumors.com/t/Z4nU2dRocDnr4NPvf-sGNedmPGA=/2250x/article-new/2022/01/iOS-App-Store-General-Feature-JoeBlue.jpg\",\n            \"publishedAt\": \"2022-03-17T17:38:24Z\",\n            \"content\": \"The European Union is set to introduce new legislation as soon as this month that would significantly affect how the App Store operates in Europe, reports The Wall Street Journal.\\r\\nThe Digital Market… [+1657 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"MacRumors\"\n            },\n            \"author\": \"Juli Clover\",\n            \"title\": \"Apple Using Streamlined Purchase Process for T-Mobile and AT&T iPhone SE Buyers\",\n            \"description\": \"Apple is streamlining its iPhone purchase process with the launch of the iPhone SE, and has introduced a new buying method that allows customers to purchase T-Mobile and AT&T devices without inputting their current carrier information.\\n\\n\\n\\n\\n\\nAs outlined by Blo…\",\n            \"url\": \"https://www.macrumors.com/2022/03/17/iphone-se-streamlined-purchase-process/\",\n            \"urlToImage\": \"https://images.macrumors.com/t/8eNWi8U_gBqJ-SII6huOi7uTumA=/1960x/article-new/2022/03/iPhone-SE-3-stacked.jpg\",\n            \"publishedAt\": \"2022-03-17T21:50:23Z\",\n            \"content\": \"Apple is streamlining its iPhone purchase process with the launch of the iPhone SE, and has introduced a new buying method that allows customers to purchase T-Mobile and AT&amp;T devices without inpu… [+1559 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"MacRumors\"\n            },\n            \"author\": \"Hartley Charlton\",\n            \"title\": \"LG's UltraFine 5K Display Will Be Returning as Alternative to Apple's Studio Display\",\n            \"description\": \"LG's 27-inch UltraFine 5K external display has not been discontinued and will be back in stock next month, LG has told The Wall Street Journal.\\n\\n\\n\\n\\n\\nFollowing speculation that the LG UltraFine 5K display may have been discontinued when it went out of stock at…\",\n            \"url\": \"https://www.macrumors.com/2022/03/17/ultrafine-5k-display-will-be-returning/\",\n            \"urlToImage\": \"https://images.macrumors.com/t/SgWUCPNnPPFFyvaI4cKyzPqc5Tk=/1600x/article-new/2019/05/LG-UltraFine-Display.jpg\",\n            \"publishedAt\": \"2022-03-17T16:09:02Z\",\n            \"content\": \"LG's 27-inch UltraFine 5K external display has not been discontinued and will be back in stock next month, LG has told The Wall Street Journal.\\r\\nFollowing speculation that the LG UltraFine 5K display… [+1773 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"MacRumors\"\n            },\n            \"author\": \"Juli Clover\",\n            \"title\": \"First Mac Studio and Studio Display Orders Begin Arriving to Customers in Australia and New Zealand\",\n            \"description\": \"It is officially March 18 in Australia and New Zealand, which means that it's Mac Studio and Studio Display launch day. Customers in these countries are always the first to get their hands on new devices, and Apple's new studio devices are being delivered.\\n\\n\\n…\",\n            \"url\": \"https://www.macrumors.com/2022/03/17/mac-studio-australia-new-zealand-launch/\",\n            \"urlToImage\": \"https://images.macrumors.com/t/gT4GaotAr72BCcoULMzK0qXKu1g=/2000x/article-new/2022/03/mac-studio-studio-display-duo.jpg\",\n            \"publishedAt\": \"2022-03-17T22:02:34Z\",\n            \"content\": \"It is officially March 18 in Australia and New Zealand, which means that it's Mac Studio and Studio Display launch day. Customers in these countries are always the first to get their hands on new dev… [+1652 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"MacRumors\"\n            },\n            \"author\": \"Juli Clover\",\n            \"title\": \"Sony's New LinkBuds vs. Apple's AirPods 3\",\n            \"description\": \"Sony in February introduced the LinkBuds, a curious set of earphones that have an open design that's not quite like any other in-ear headphone product on the market. We picked up a set of Sony's strange LinkBuds to see how they measure up to Apple's third-gen…\",\n            \"url\": \"https://www.macrumors.com/2022/03/17/apple-airpods-vs-sony-linkbuds/\",\n            \"urlToImage\": \"https://images.macrumors.com/t/q5jCkWaNxFEEI2Vt-HJPTrvD_oU=/3840x/article-new/2022/03/linkbuds-thumbnail.jpg\",\n            \"publishedAt\": \"2022-03-17T19:07:49Z\",\n            \"content\": \"Sony in February introduced the LinkBuds, a curious set of earphones that have an open design that's not quite like any other in-ear headphone product on the market. We picked up a set of Sony's stra… [+1832 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"CNET\"\n            },\n            \"author\": \"Andrew Blok\",\n            \"title\": \"Matter Smart Home Standard Reportedly Delayed Until Fall - CNET\",\n            \"description\": \"Matter, originally slated for 2020, will connect devices from Amazon, Apple, Comcast, Google and more.\",\n            \"url\": \"https://www.cnet.com/home/smart-home/matter-smart-home-standard-reportedly-delayed-until-fall/\",\n            \"urlToImage\": \"https://www.cnet.com/a/img/resize/b6d505db0af2f6e075167ecd222a579eab3f4569/2021/05/11/866b3730-6dd5-4e6a-a8f8-e2e1a11c240b/matter-logo-gradient.jpg?auto=webp&fit=crop&height=630&width=1200\",\n            \"publishedAt\": \"2022-03-17T14:19:24Z\",\n            \"content\": \"Matter has been delayed until fall of 2022.\\r\\nConnectivity Standards Alliance; illustration by Stephen Shankland/CNET\\r\\nMatter, which will connect smart home devices from over a dozen brands, has been … [+588 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"CNET\"\n            },\n            \"author\": \"Mike Sorrentino\",\n            \"title\": \"Samsung's Galaxy A33 Budget Phone Gets An Update - CNET\",\n            \"description\": \"Samsung revealed the new phone during the Galaxy A event.\",\n            \"url\": \"https://www.cnet.com/tech/mobile/samsungs-galaxy-a33-budget-phone-gets-an-update/\",\n            \"urlToImage\": \"https://www.cnet.com/a/img/resize/0c9cc98d5adcfb0a521fc8bed8e8a684e72e1a7c/2021/05/07/c1b660e0-24e6-43f3-9544-753f74e9f972/samsung-galaxy-a32-5g-review-cnet-4.jpg?auto=webp&fit=crop&height=630&width=1200\",\n            \"publishedAt\": \"2022-03-17T14:10:40Z\",\n            \"content\": \"The Samsung Galaxy A32 (pictured) will be replaced by the Galaxy A33, which Samsung revealed Thursday.\\r\\nAndrew Hoyle/CNET\\r\\nSamsung revealed the Galaxy A33 phone Thursday as part of the company's Gala… [+874 chars]\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "swapi",
+			"item": [
+				{
+					"name": "People ID 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{swapiBaseURL}}/people/:id",
+							"host": [
+								"{{swapiBaseURL}}"
+							],
+							"path": [
+								"people",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{swapiBaseURL}}/people/:id",
+									"host": [
+										"{{swapiBaseURL}}"
+									],
+									"path": [
+										"people",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.16.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Mar 2022 04:24:54 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "ETag",
+									"value": "\"ee398610435c328f4d0a4e1b0d2f7bbc\""
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15768000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Luke Skywalker\",\n    \"height\": \"172\",\n    \"mass\": \"77\",\n    \"hair_color\": \"blond\",\n    \"skin_color\": \"fair\",\n    \"eye_color\": \"blue\",\n    \"birth_year\": \"19BBY\",\n    \"gender\": \"male\",\n    \"homeworld\": \"https://swapi.dev/api/planets/1/\",\n    \"films\": [\n        \"https://swapi.dev/api/films/1/\",\n        \"https://swapi.dev/api/films/2/\",\n        \"https://swapi.dev/api/films/3/\",\n        \"https://swapi.dev/api/films/6/\"\n    ],\n    \"species\": [],\n    \"vehicles\": [\n        \"https://swapi.dev/api/vehicles/14/\",\n        \"https://swapi.dev/api/vehicles/30/\"\n    ],\n    \"starships\": [\n        \"https://swapi.dev/api/starships/12/\",\n        \"https://swapi.dev/api/starships/22/\"\n    ],\n    \"created\": \"2014-12-09T13:50:51.644000Z\",\n    \"edited\": \"2014-12-20T21:17:56.891000Z\",\n    \"url\": \"https://swapi.dev/api/people/1/\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Planet ID 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{swapiBaseURL}}/planets/:id",
+							"host": [
+								"{{swapiBaseURL}}"
+							],
+							"path": [
+								"planets",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{swapiBaseURL}}/planets/:id",
+									"host": [
+										"{{swapiBaseURL}}"
+									],
+									"path": [
+										"planets",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.16.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Mar 2022 04:25:27 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "ETag",
+									"value": "\"ccbca9ad5dbcc6c73413df0765660c26\""
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15768000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Yavin IV\",\n    \"rotation_period\": \"24\",\n    \"orbital_period\": \"4818\",\n    \"diameter\": \"10200\",\n    \"climate\": \"temperate, tropical\",\n    \"gravity\": \"1 standard\",\n    \"terrain\": \"jungle, rainforests\",\n    \"surface_water\": \"8\",\n    \"population\": \"1000\",\n    \"residents\": [],\n    \"films\": [\n        \"https://swapi.dev/api/films/1/\"\n    ],\n    \"created\": \"2014-12-10T11:37:19.144000Z\",\n    \"edited\": \"2014-12-20T20:58:18.421000Z\",\n    \"url\": \"https://swapi.dev/api/planets/3/\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Starship ID 9",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{swapiBaseURL}}/starships/:id",
+							"host": [
+								"{{swapiBaseURL}}"
+							],
+							"path": [
+								"starships",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{swapiBaseURL}}/starships/:id",
+									"host": [
+										"{{swapiBaseURL}}"
+									],
+									"path": [
+										"starships",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "9"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.16.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Mar 2022 04:26:10 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "ETag",
+									"value": "\"058c95fce38484128f1c3f2e5dd04d50\""
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15768000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Death Star\",\n    \"model\": \"DS-1 Orbital Battle Station\",\n    \"manufacturer\": \"Imperial Department of Military Research, Sienar Fleet Systems\",\n    \"cost_in_credits\": \"1000000000000\",\n    \"length\": \"120000\",\n    \"max_atmosphering_speed\": \"n/a\",\n    \"crew\": \"342,953\",\n    \"passengers\": \"843,342\",\n    \"cargo_capacity\": \"1000000000000\",\n    \"consumables\": \"3 years\",\n    \"hyperdrive_rating\": \"4.0\",\n    \"MGLT\": \"10\",\n    \"starship_class\": \"Deep Space Mobile Battlestation\",\n    \"pilots\": [],\n    \"films\": [\n        \"https://swapi.dev/api/films/1/\"\n    ],\n    \"created\": \"2014-12-10T16:36:50.509000Z\",\n    \"edited\": \"2014-12-20T21:26:24.783000Z\",\n    \"url\": \"https://swapi.dev/api/starships/9/\"\n}"
+						}
+					]
+				},
+				{
+					"name": "All Vehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{swapiBaseURL}}/vehicles",
+							"host": [
+								"{{swapiBaseURL}}"
+							],
+							"path": [
+								"vehicles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{swapiBaseURL}}/vehicles",
+									"host": [
+										"{{swapiBaseURL}}"
+									],
+									"path": [
+										"vehicles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.16.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Mar 2022 04:27:14 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "ETag",
+									"value": "\"07ce0a7ff4d543e56c3c64af89bfc766\""
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15768000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 39,\n    \"next\": \"https://swapi.dev/api/vehicles/?page=2\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"name\": \"Sand Crawler\",\n            \"model\": \"Digger Crawler\",\n            \"manufacturer\": \"Corellia Mining Corporation\",\n            \"cost_in_credits\": \"150000\",\n            \"length\": \"36.8 \",\n            \"max_atmosphering_speed\": \"30\",\n            \"crew\": \"46\",\n            \"passengers\": \"30\",\n            \"cargo_capacity\": \"50000\",\n            \"consumables\": \"2 months\",\n            \"vehicle_class\": \"wheeled\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/5/\"\n            ],\n            \"created\": \"2014-12-10T15:36:25.724000Z\",\n            \"edited\": \"2014-12-20T21:30:21.661000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/4/\"\n        },\n        {\n            \"name\": \"T-16 skyhopper\",\n            \"model\": \"T-16 skyhopper\",\n            \"manufacturer\": \"Incom Corporation\",\n            \"cost_in_credits\": \"14500\",\n            \"length\": \"10.4 \",\n            \"max_atmosphering_speed\": \"1200\",\n            \"crew\": \"1\",\n            \"passengers\": \"1\",\n            \"cargo_capacity\": \"50\",\n            \"consumables\": \"0\",\n            \"vehicle_class\": \"repulsorcraft\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\"\n            ],\n            \"created\": \"2014-12-10T16:01:52.434000Z\",\n            \"edited\": \"2014-12-20T21:30:21.665000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/6/\"\n        },\n        {\n            \"name\": \"X-34 landspeeder\",\n            \"model\": \"X-34 landspeeder\",\n            \"manufacturer\": \"SoroSuub Corporation\",\n            \"cost_in_credits\": \"10550\",\n            \"length\": \"3.4 \",\n            \"max_atmosphering_speed\": \"250\",\n            \"crew\": \"1\",\n            \"passengers\": \"1\",\n            \"cargo_capacity\": \"5\",\n            \"consumables\": \"unknown\",\n            \"vehicle_class\": \"repulsorcraft\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\"\n            ],\n            \"created\": \"2014-12-10T16:13:52.586000Z\",\n            \"edited\": \"2014-12-20T21:30:21.668000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/7/\"\n        },\n        {\n            \"name\": \"TIE/LN starfighter\",\n            \"model\": \"Twin Ion Engine/Ln Starfighter\",\n            \"manufacturer\": \"Sienar Fleet Systems\",\n            \"cost_in_credits\": \"unknown\",\n            \"length\": \"6.4\",\n            \"max_atmosphering_speed\": \"1200\",\n            \"crew\": \"1\",\n            \"passengers\": \"0\",\n            \"cargo_capacity\": \"65\",\n            \"consumables\": \"2 days\",\n            \"vehicle_class\": \"starfighter\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-10T16:33:52.860000Z\",\n            \"edited\": \"2014-12-20T21:30:21.670000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/8/\"\n        },\n        {\n            \"name\": \"Snowspeeder\",\n            \"model\": \"t-47 airspeeder\",\n            \"manufacturer\": \"Incom corporation\",\n            \"cost_in_credits\": \"unknown\",\n            \"length\": \"4.5\",\n            \"max_atmosphering_speed\": \"650\",\n            \"crew\": \"2\",\n            \"passengers\": \"0\",\n            \"cargo_capacity\": \"10\",\n            \"consumables\": \"none\",\n            \"vehicle_class\": \"airspeeder\",\n            \"pilots\": [\n                \"https://swapi.dev/api/people/1/\",\n                \"https://swapi.dev/api/people/18/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\"\n            ],\n            \"created\": \"2014-12-15T12:22:12Z\",\n            \"edited\": \"2014-12-20T21:30:21.672000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/14/\"\n        },\n        {\n            \"name\": \"TIE bomber\",\n            \"model\": \"TIE/sa bomber\",\n            \"manufacturer\": \"Sienar Fleet Systems\",\n            \"cost_in_credits\": \"unknown\",\n            \"length\": \"7.8\",\n            \"max_atmosphering_speed\": \"850\",\n            \"crew\": \"1\",\n            \"passengers\": \"0\",\n            \"cargo_capacity\": \"none\",\n            \"consumables\": \"2 days\",\n            \"vehicle_class\": \"space/planetary bomber\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-15T12:33:15.838000Z\",\n            \"edited\": \"2014-12-20T21:30:21.675000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/16/\"\n        },\n        {\n            \"name\": \"AT-AT\",\n            \"model\": \"All Terrain Armored Transport\",\n            \"manufacturer\": \"Kuat Drive Yards, Imperial Department of Military Research\",\n            \"cost_in_credits\": \"unknown\",\n            \"length\": \"20\",\n            \"max_atmosphering_speed\": \"60\",\n            \"crew\": \"5\",\n            \"passengers\": \"40\",\n            \"cargo_capacity\": \"1000\",\n            \"consumables\": \"unknown\",\n            \"vehicle_class\": \"assault walker\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-15T12:38:25.937000Z\",\n            \"edited\": \"2014-12-20T21:30:21.677000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/18/\"\n        },\n        {\n            \"name\": \"AT-ST\",\n            \"model\": \"All Terrain Scout Transport\",\n            \"manufacturer\": \"Kuat Drive Yards, Imperial Department of Military Research\",\n            \"cost_in_credits\": \"unknown\",\n            \"length\": \"2\",\n            \"max_atmosphering_speed\": \"90\",\n            \"crew\": \"2\",\n            \"passengers\": \"0\",\n            \"cargo_capacity\": \"200\",\n            \"consumables\": \"none\",\n            \"vehicle_class\": \"walker\",\n            \"pilots\": [\n                \"https://swapi.dev/api/people/13/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-15T12:46:42.384000Z\",\n            \"edited\": \"2014-12-20T21:30:21.679000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/19/\"\n        },\n        {\n            \"name\": \"Storm IV Twin-Pod cloud car\",\n            \"model\": \"Storm IV Twin-Pod\",\n            \"manufacturer\": \"Bespin Motors\",\n            \"cost_in_credits\": \"75000\",\n            \"length\": \"7\",\n            \"max_atmosphering_speed\": \"1500\",\n            \"crew\": \"2\",\n            \"passengers\": \"0\",\n            \"cargo_capacity\": \"10\",\n            \"consumables\": \"1 day\",\n            \"vehicle_class\": \"repulsorcraft\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\"\n            ],\n            \"created\": \"2014-12-15T12:58:50.530000Z\",\n            \"edited\": \"2014-12-20T21:30:21.681000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/20/\"\n        },\n        {\n            \"name\": \"Sail barge\",\n            \"model\": \"Modified Luxury Sail Barge\",\n            \"manufacturer\": \"Ubrikkian Industries Custom Vehicle Division\",\n            \"cost_in_credits\": \"285000\",\n            \"length\": \"30\",\n            \"max_atmosphering_speed\": \"100\",\n            \"crew\": \"26\",\n            \"passengers\": \"500\",\n            \"cargo_capacity\": \"2000000\",\n            \"consumables\": \"Live food tanks\",\n            \"vehicle_class\": \"sail barge\",\n            \"pilots\": [],\n            \"films\": [\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-18T10:44:14.217000Z\",\n            \"edited\": \"2014-12-20T21:30:21.684000Z\",\n            \"url\": \"https://swapi.dev/api/vehicles/24/\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "All Species",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{swapiBaseURL}}/species",
+							"host": [
+								"{{swapiBaseURL}}"
+							],
+							"path": [
+								"species"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{swapiBaseURL}}/species",
+									"host": [
+										"{{swapiBaseURL}}"
+									],
+									"path": [
+										"species"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.16.1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 18 Mar 2022 04:27:38 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "ETag",
+									"value": "\"0c718baefceacab640ee96782f156b25\""
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15768000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 37,\n    \"next\": \"https://swapi.dev/api/species/?page=2\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"name\": \"Human\",\n            \"classification\": \"mammal\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"180\",\n            \"skin_colors\": \"caucasian, black, asian, hispanic\",\n            \"hair_colors\": \"blonde, brown, black, red\",\n            \"eye_colors\": \"brown, blue, green, hazel, grey, amber\",\n            \"average_lifespan\": \"120\",\n            \"homeworld\": \"https://swapi.dev/api/planets/9/\",\n            \"language\": \"Galactic Basic\",\n            \"people\": [\n                \"https://swapi.dev/api/people/66/\",\n                \"https://swapi.dev/api/people/67/\",\n                \"https://swapi.dev/api/people/68/\",\n                \"https://swapi.dev/api/people/74/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/4/\",\n                \"https://swapi.dev/api/films/5/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"created\": \"2014-12-10T13:52:11.567000Z\",\n            \"edited\": \"2014-12-20T21:36:42.136000Z\",\n            \"url\": \"https://swapi.dev/api/species/1/\"\n        },\n        {\n            \"name\": \"Droid\",\n            \"classification\": \"artificial\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"n/a\",\n            \"skin_colors\": \"n/a\",\n            \"hair_colors\": \"n/a\",\n            \"eye_colors\": \"n/a\",\n            \"average_lifespan\": \"indefinite\",\n            \"homeworld\": null,\n            \"language\": \"n/a\",\n            \"people\": [\n                \"https://swapi.dev/api/people/2/\",\n                \"https://swapi.dev/api/people/3/\",\n                \"https://swapi.dev/api/people/8/\",\n                \"https://swapi.dev/api/people/23/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/4/\",\n                \"https://swapi.dev/api/films/5/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"created\": \"2014-12-10T15:16:16.259000Z\",\n            \"edited\": \"2014-12-20T21:36:42.139000Z\",\n            \"url\": \"https://swapi.dev/api/species/2/\"\n        },\n        {\n            \"name\": \"Wookie\",\n            \"classification\": \"mammal\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"210\",\n            \"skin_colors\": \"gray\",\n            \"hair_colors\": \"black, brown\",\n            \"eye_colors\": \"blue, green, yellow, brown, golden, red\",\n            \"average_lifespan\": \"400\",\n            \"homeworld\": \"https://swapi.dev/api/planets/14/\",\n            \"language\": \"Shyriiwook\",\n            \"people\": [\n                \"https://swapi.dev/api/people/13/\",\n                \"https://swapi.dev/api/people/80/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"created\": \"2014-12-10T16:44:31.486000Z\",\n            \"edited\": \"2014-12-20T21:36:42.142000Z\",\n            \"url\": \"https://swapi.dev/api/species/3/\"\n        },\n        {\n            \"name\": \"Rodian\",\n            \"classification\": \"sentient\",\n            \"designation\": \"reptilian\",\n            \"average_height\": \"170\",\n            \"skin_colors\": \"green, blue\",\n            \"hair_colors\": \"n/a\",\n            \"eye_colors\": \"black\",\n            \"average_lifespan\": \"unknown\",\n            \"homeworld\": \"https://swapi.dev/api/planets/23/\",\n            \"language\": \"Galatic Basic\",\n            \"people\": [\n                \"https://swapi.dev/api/people/15/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\"\n            ],\n            \"created\": \"2014-12-10T17:05:26.471000Z\",\n            \"edited\": \"2014-12-20T21:36:42.144000Z\",\n            \"url\": \"https://swapi.dev/api/species/4/\"\n        },\n        {\n            \"name\": \"Hutt\",\n            \"classification\": \"gastropod\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"300\",\n            \"skin_colors\": \"green, brown, tan\",\n            \"hair_colors\": \"n/a\",\n            \"eye_colors\": \"yellow, red\",\n            \"average_lifespan\": \"1000\",\n            \"homeworld\": \"https://swapi.dev/api/planets/24/\",\n            \"language\": \"Huttese\",\n            \"people\": [\n                \"https://swapi.dev/api/people/16/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/1/\",\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-10T17:12:50.410000Z\",\n            \"edited\": \"2014-12-20T21:36:42.146000Z\",\n            \"url\": \"https://swapi.dev/api/species/5/\"\n        },\n        {\n            \"name\": \"Yoda's species\",\n            \"classification\": \"mammal\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"66\",\n            \"skin_colors\": \"green, yellow\",\n            \"hair_colors\": \"brown, white\",\n            \"eye_colors\": \"brown, green, yellow\",\n            \"average_lifespan\": \"900\",\n            \"homeworld\": \"https://swapi.dev/api/planets/28/\",\n            \"language\": \"Galactic basic\",\n            \"people\": [\n                \"https://swapi.dev/api/people/20/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\",\n                \"https://swapi.dev/api/films/3/\",\n                \"https://swapi.dev/api/films/4/\",\n                \"https://swapi.dev/api/films/5/\",\n                \"https://swapi.dev/api/films/6/\"\n            ],\n            \"created\": \"2014-12-15T12:27:22.877000Z\",\n            \"edited\": \"2014-12-20T21:36:42.148000Z\",\n            \"url\": \"https://swapi.dev/api/species/6/\"\n        },\n        {\n            \"name\": \"Trandoshan\",\n            \"classification\": \"reptile\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"200\",\n            \"skin_colors\": \"brown, green\",\n            \"hair_colors\": \"none\",\n            \"eye_colors\": \"yellow, orange\",\n            \"average_lifespan\": \"unknown\",\n            \"homeworld\": \"https://swapi.dev/api/planets/29/\",\n            \"language\": \"Dosh\",\n            \"people\": [\n                \"https://swapi.dev/api/people/24/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/2/\"\n            ],\n            \"created\": \"2014-12-15T13:07:47.704000Z\",\n            \"edited\": \"2014-12-20T21:36:42.151000Z\",\n            \"url\": \"https://swapi.dev/api/species/7/\"\n        },\n        {\n            \"name\": \"Mon Calamari\",\n            \"classification\": \"amphibian\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"160\",\n            \"skin_colors\": \"red, blue, brown, magenta\",\n            \"hair_colors\": \"none\",\n            \"eye_colors\": \"yellow\",\n            \"average_lifespan\": \"unknown\",\n            \"homeworld\": \"https://swapi.dev/api/planets/31/\",\n            \"language\": \"Mon Calamarian\",\n            \"people\": [\n                \"https://swapi.dev/api/people/27/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-18T11:09:52.263000Z\",\n            \"edited\": \"2014-12-20T21:36:42.153000Z\",\n            \"url\": \"https://swapi.dev/api/species/8/\"\n        },\n        {\n            \"name\": \"Ewok\",\n            \"classification\": \"mammal\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"100\",\n            \"skin_colors\": \"brown\",\n            \"hair_colors\": \"white, brown, black\",\n            \"eye_colors\": \"orange, brown\",\n            \"average_lifespan\": \"unknown\",\n            \"homeworld\": \"https://swapi.dev/api/planets/7/\",\n            \"language\": \"Ewokese\",\n            \"people\": [\n                \"https://swapi.dev/api/people/30/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-18T11:22:00.285000Z\",\n            \"edited\": \"2014-12-20T21:36:42.155000Z\",\n            \"url\": \"https://swapi.dev/api/species/9/\"\n        },\n        {\n            \"name\": \"Sullustan\",\n            \"classification\": \"mammal\",\n            \"designation\": \"sentient\",\n            \"average_height\": \"180\",\n            \"skin_colors\": \"pale\",\n            \"hair_colors\": \"none\",\n            \"eye_colors\": \"black\",\n            \"average_lifespan\": \"unknown\",\n            \"homeworld\": \"https://swapi.dev/api/planets/33/\",\n            \"language\": \"Sullutese\",\n            \"people\": [\n                \"https://swapi.dev/api/people/31/\"\n            ],\n            \"films\": [\n                \"https://swapi.dev/api/films/3/\"\n            ],\n            \"created\": \"2014-12-18T11:26:20.103000Z\",\n            \"edited\": \"2014-12-20T21:36:42.157000Z\",\n            \"url\": \"https://swapi.dev/api/species/10/\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "rentbook",
+			"item": [
+				{
+					"name": "Add New Client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client_id\": 1234,\r\n  \"client_key\": \"CLIENT03\",\r\n  \"client_secret\": \"SECRET03\",\r\n  \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rentBookBaseURL}}/client",
+							"host": [
+								"{{rentBookBaseURL}}"
+							],
+							"path": [
+								"client"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"client_id\": 1234,\r\n  \"client_key\": \"CLIENT01\",\r\n  \"client_secret\": \"SECRET01\",\r\n  \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{rentBookBaseURL}}/client",
+									"host": [
+										"{{rentBookBaseURL}}"
+									],
+									"path": [
+										"client"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 18 Mar 2022 04:33:21 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "130"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,Content-Type,Accept,Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.29.v20200521)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"created_at\": \"2019-02-18T00:00:00\",\n    \"updated_at\": \"2019-02-18T00:00:00\",\n    \"deleted_at\": \"2019-02-18T00:00:00\",\n    \"client_id\": 1234,\n    \"client_key\": \"CLIENT01\",\n    \"client_secret\": \"SECRET01\",\n    \"status\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Client",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{rentBookBaseURL}}/client",
+							"host": [
+								"{{rentBookBaseURL}}"
+							],
+							"path": [
+								"client"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{rentBookBaseURL}}/client",
+									"host": [
+										"{{rentBookBaseURL}}"
+									],
+									"path": [
+										"client"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 18 Mar 2022 04:34:01 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "105"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,Content-Type,Accept,Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.29.v20200521)"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"client_id\": 1,\n        \"client_key\": \"CLIENT01\",\n        \"client_secret\": \"SECRET01\",\n        \"status\": true\n    },\n    {\n        \"client_id\": 2,\n        \"client_key\": \"CLIENT02\",\n        \"client_secret\": \"SECRET02\",\n        \"status\": true\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Update Client by ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client_id\": 1234,\r\n  \"client_key\": \"CLIENT02uhuy\",\r\n  \"client_secret\": \"SECRET02uhuy\",\r\n  \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rentBookBaseURL}}/client/:id",
+							"host": [
+								"{{rentBookBaseURL}}"
+							],
+							"path": [
+								"client",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"client_id\": 1234,\r\n  \"client_key\": \"CLIENT02uhuy\",\r\n  \"client_secret\": \"SECRET02uhuy\",\r\n  \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{rentBookBaseURL}}/client/:id",
+									"host": [
+										"{{rentBookBaseURL}}"
+									],
+									"path": [
+										"client",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 23 Mar 2022 07:20:55 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "130"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,Content-Type,Accept,Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.29.v20200521)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"created_at\": \"2019-02-18T00:00:00\",\n    \"updated_at\": \"2019-02-18T00:00:00\",\n    \"deleted_at\": \"2019-02-18T00:00:00\",\n    \"client_id\": 1234,\n    \"client_key\": \"CLIENT01\",\n    \"client_secret\": \"SECRET01\",\n    \"status\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Client by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{rentBookBaseURL}}/client/:id",
+							"host": [
+								"{{rentBookBaseURL}}"
+							],
+							"path": [
+								"client",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{rentBookBaseURL}}/client/:id",
+									"host": [
+										"{{rentBookBaseURL}}"
+									],
+									"path": [
+										"client",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 18 Mar 2022 04:42:22 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,Content-Type,Accept,Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.29.v20200521)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"deleted\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
