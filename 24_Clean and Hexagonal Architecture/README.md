@@ -1,16 +1,16 @@
 # Praktikum
 
-Directories
-
-![](./screenshots/Screenshot%202022-04-06%20140413.jpg)
-
 Create User
 
-![](./screenshots/Screenshot%202022-04-06%20140145.jpg)
+![](./screenshots/Screenshot%202022-04-10%20201714.jpg)
 
-Get All User
+Get Users
 
-![](./screenshots/Screenshot%202022-04-06%20140214.jpg)
+![](./screenshots/Screenshot%202022-04-10%20201737.jpg)
+
+Directories
+
+![](./screenshots/Screenshot%202022-04-10%20201832.jpg)
 
 # Resume
 - clean architecture: pemisahan tanggung jawab (separation of concerns)

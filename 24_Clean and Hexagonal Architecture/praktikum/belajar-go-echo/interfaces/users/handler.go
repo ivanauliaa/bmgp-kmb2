@@ -2,18 +2,27 @@ package users
 
 import (
 	model "belajar-go-echo/domains/users"
-	"belajar-go-echo/repositories/users"
 
 	"net/http"
 
 	"github.com/labstack/echo/v4"
 )
 
-func CreateUserHandler(c echo.Context) error {
+type handler struct {
+	repository model.UserRepository
+}
+
+func NewUserHandler(repo model.UserRepository) model.UserHandler {
+	return &handler{
+		repository: repo,
+	}
+}
+
+func (h *handler) CreateUserHandler(c echo.Context) error {
 	user := model.User{}
 	c.Bind(&user)
 
-	err := users.CreateUser(user)
+	err := h.repository.CreateUser(user)
 	if err != nil {
 		return c.JSON(http.StatusInternalServerError, map[string]interface{}{
 			"messages": err.Error(),
@@ -27,8 +36,8 @@ func CreateUserHandler(c echo.Context) error {
 
 }
 
-func GetAllUsersHandler(c echo.Context) error {
-	users := users.GetAllUsers()
+func (h *handler) GetUsersHandler(c echo.Context) error {
+	users := h.repository.GetUsers()
 
 	return c.JSON(http.StatusOK, map[string]interface{}{
 		"messages": "success",

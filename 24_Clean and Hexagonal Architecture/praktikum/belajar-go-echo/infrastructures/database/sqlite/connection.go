@@ -2,23 +2,22 @@ package sqlite
 
 import (
 	"belajar-go-echo/domains/users"
+	"fmt"
 
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )
 
-var DB *gorm.DB
+func ConnectDB() *gorm.DB {
+	DB, err := gorm.Open(sqlite.Open("app.db"), &gorm.Config{})
+	if err != nil {
+		fmt.Println("db connection error")
+		return nil
+	}
 
-func init() {
-	ConnectDB()
-}
-
-func ConnectDB() {
-	DB, _ = gorm.Open(sqlite.Open("app.db"), &gorm.Config{})
-}
-
-func MigrateDB() error {
-	return DB.AutoMigrate(
+	DB.AutoMigrate(
 		users.User{},
 	)
+
+	return DB
 }
