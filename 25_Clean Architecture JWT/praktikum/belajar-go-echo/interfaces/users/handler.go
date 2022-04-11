@@ -2,20 +2,28 @@ package users
 
 import (
 	model "belajar-go-echo/domains/users"
-	"belajar-go-echo/repositories/users"
-	"time"
+	"strconv"
 
 	"net/http"
 
-	"github.com/golang-jwt/jwt"
 	"github.com/labstack/echo/v4"
 )
 
-func CreateUserHandler(c echo.Context) error {
+type handler struct {
+	repository model.UserRepository
+}
+
+func NewUserHandler(repo model.UserRepository) model.UserHandler {
+	return &handler{
+		repository: repo,
+	}
+}
+
+func (h *handler) CreateUserHandler(c echo.Context) error {
 	user := model.User{}
 	c.Bind(&user)
 
-	err := users.CreateUser(user)
+	err := h.repository.CreateUser(user)
 	if err != nil {
 		return c.JSON(http.StatusInternalServerError, map[string]interface{}{
 			"messages": err.Error(),
@@ -29,8 +37,8 @@ func CreateUserHandler(c echo.Context) error {
 
 }
 
-func GetAllUsersHandler(c echo.Context) error {
-	users := users.GetAllUsers()
+func (h *handler) GetUsersHandler(c echo.Context) error {
+	users := h.repository.GetUsers()
 
 	return c.JSON(http.StatusOK, map[string]interface{}{
 		"messages": "success",
@@ -38,28 +46,19 @@ func GetAllUsersHandler(c echo.Context) error {
 	})
 }
 
-func LoginUser(c echo.Context) error {
-	request := model.LoginRequest{}
-
-	err := c.Bind(&request)
+func (h *handler) GetUserHandler(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
-		return c.JSON(http.StatusUnprocessableEntity, err.Error())
+		return c.JSON(http.StatusBadRequest, err.Error())
 	}
 
-	user := users.Login(request)
-	if user == nil {
-		return c.JSON(http.StatusBadRequest, "Invalid credentials")
-	}
-
-	claims := jwt.MapClaims{}
-	claims["exp"] = time.Now().Add(time.Hour * 1).Unix()
-
-	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
-
-	jwt, err := token.SignedString([]byte("secret"))
+	user, err := h.repository.GetUser(id)
 	if err != nil {
-		return c.JSON(http.StatusInternalServerError, err.Error())
+		return c.JSON(http.StatusBadRequest, err.Error())
 	}
 
-	return c.JSON(http.StatusOK, jwt)
+	return c.JSON(http.StatusOK, map[string]interface{}{
+		"messages": "success",
+		"user":     user,
+	})
 }

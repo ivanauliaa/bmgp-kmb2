@@ -1,16 +1,24 @@
 # Praktikum
 
+Create user
+
+![](./screenshots/Screenshot%202022-04-11%20204828.jpg)
+
 Login
 
-![](./screenshots/Screenshot%202022-04-09%20192529.jpg)
+![](./screenshots/Screenshot%202022-04-11%20204841.jpg)
 
-Create user without token
+Get users without auth
 
-![](./screenshots/Screenshot%202022-04-09%20192543.jpg)
+![](./screenshots/Screenshot%202022-04-11%20204855.jpg)
 
-Create user with token
+Get users with auth
 
-![](./screenshots/Screenshot%202022-04-09%20192557.jpg)
+![](./screenshots/Screenshot%202022-04-11%20204907.jpg)
+
+Directories
+
+![](./screenshots/Screenshot%202022-04-11%20204803.jpg)
 
 # Resume
 

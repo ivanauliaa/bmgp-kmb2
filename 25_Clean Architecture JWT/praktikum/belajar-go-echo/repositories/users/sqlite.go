@@ -2,13 +2,24 @@ package users
 
 import (
 	"belajar-go-echo/domains/users"
-	"belajar-go-echo/infrastructures/database/sqlite"
 
 	"fmt"
+
+	"gorm.io/gorm"
 )
 
-func CreateUser(user users.User) error {
-	res := sqlite.DB.Create(&user)
+type repository struct {
+	DB *gorm.DB
+}
+
+func NewUserSQLiteRepository(db *gorm.DB) users.UserRepository {
+	return &repository{
+		DB: db,
+	}
+}
+
+func (r *repository) CreateUser(user users.User) error {
+	res := r.DB.Create(&user)
 	if res.RowsAffected < 1 {
 		return fmt.Errorf("error insert")
 	}
@@ -16,20 +27,20 @@ func CreateUser(user users.User) error {
 	return nil
 }
 
-func GetAllUsers() []users.User {
+func (r *repository) GetUsers() []users.User {
 	users := []users.User{}
-	sqlite.DB.Find(&users)
+	r.DB.Find(&users)
 
 	return users
 }
 
-func Login(loginRequest users.LoginRequest) *users.User {
+func (r *repository) GetUser(id int) (users.User, error) {
 	user := users.User{}
+	res := r.DB.Where("id = ?", id).Find(&user)
 
-	err := sqlite.DB.Where("email = ? AND password = ?", loginRequest.Email, loginRequest.Password).Find(&user).Error
-	if err != nil {
-		return nil
+	if res.RowsAffected < 1 {
+		return user, res.Error
 	}
 
-	return &user
+	return user, nil
 }
