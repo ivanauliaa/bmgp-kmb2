@@ -9,7 +9,7 @@ jobs:
   log-trial:
     runs-on: ubuntu-latest
     steps:
-      - echo "cd hello world"
+      - run: echo "ci hello world with go unit test"
 
   unit-test:
     runs-on: ubuntu-latest
